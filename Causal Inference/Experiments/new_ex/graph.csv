@@ -1,0 +1,6 @@
+﻿Cause,Effect,Score
+x1,x2,0
+x1,x3,0
+x2,x4,1
+x3,x4,1
+x4,x5,1

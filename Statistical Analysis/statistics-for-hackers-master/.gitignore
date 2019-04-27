@@ -1,0 +1,6 @@
+# Jupyter notebook checkpoints
+.ipynb_checkpoints
+
+# Emacs temp files
+\#*\#
+*~

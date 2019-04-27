@@ -1,0 +1,7 @@
+strategy
+merger
+mergers
+acquisition
+pricing
+long-term
+execute

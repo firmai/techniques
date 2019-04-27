@@ -1,0 +1,477 @@
+
+
+
+
+Download Request: Tagged Documents: 19,23
+Time Of Request: Thursday, May 03, 2018  03:34:56
+
+Send To:
+
+UNIVERSITY OF LIVERPOOL
+SYDNEY JONES LIBRARY
+PO BOX 123
+
+
+Terms: (Airgas Inc)
+
+
+Source: FD (Fair Disclosure) Wire
+Project ID: 
+
+ 
+Results
+1.
+Q2 2016 Airgas Inc Earnings Call - Final  FD (Fair Disclosure) Wire, October 27, 2015 Tuesday, (7287 words)
+
+
+2.
+Q1 2016 Airgas Inc Earnings Call - Final  FD (Fair Disclosure) Wire, July 28, 2015 Tuesday, (7863 words)
+
+
+Return to List
+
+1 of 2 DOCUMENTS
+
+
+FD (Fair Disclosure) Wire
+
+October 27, 2015 Tuesday
+
+Q2 2016 Airgas Inc Earnings Call - Final
+
+LENGTH: 7287 words
+
+Corporate Participants
+* Joe Marczely
+Airgas, Inc. - Manager, IR
+* Peter McCausland
+Airgas, Inc. - Executive Chairman
+* Mike Molinini
+Airgas, Inc. - President and CEO
+* Bob McLaughlin
+Airgas, Inc. - SVP and CFO
+Conference Call Participants
+* Vincent Andrews
+Morgan Stanley - Analyst
+* David Begleiter
+Deutsche Bank - Analyst
+* Chris Evans
+Goldman Sachs - Analyst
+* Mike Harrison
+Seaport Global Securities - Analyst 
+* Laurence Alexander
+Jefferies LLC - Analyst
+* Mike Sison
+KeyBanc Capital Markets - Analyst
+* Christopher Perrella
+Bloomberg Intelligence - Analyst
+* David Silver
+Morningstar - Analyst
+Presentation
+OPERATOR: Good morning and welcome to the Airgas second-quarter 2016 earnings conference call. Today's call is being recorded at the request of Airgas, and all participants will be in a listen-only mode until the question-and-answer session of today's call.
+For opening remarks and introductions, I would now like to turn the conference over to Manager of Investor Relations, Joe Marczely. Please go ahead, sir.
+JOE MARCZELY, MANAGER, IR, AIRGAS, INC.: Thanks, Danny. Good morning and thank you for attending our second-quarter earnings teleconference. Joining me today are Executive Chairman, Peter McCausland; President and CEO, Mike Molinini; and Senior Vice President and CFO, Bob McLaughlin. Our earnings press release was made public this morning and is available on our website, as are the teleconference slides. To follow along, please go to airgas.com, click the Investor Relations shortcut at the bottom of the screen, and go to the earnings calls and events page.
+During the course of our presentation we will make reference to certain non-GAAP financial measures. And unless otherwise noted, metrics referred to in today's discussion will be adjusted for the unusual items identified in our earnings materials. Reconciliation to the most comparable GAAP measures can be found in our earnings release and in the slide presentation.
+This teleconference will contain forward-looking statements based on current expectations regarding important risk factors, which are identified in the earnings release and in our slide presentation. Actual results may differ materially from these statements, so we ask that you please note our Safe Harbor language.
+We will take questions after concluding our prepared remarks as time permits, and we plan to end the teleconference by 11 a.m. Eastern Time. I will now hand the call over to Peter to begin our review.
+PETER MCCAUSLAND, EXECUTIVE CHAIRMAN, AIRGAS, INC.: Thanks, Joe. Good morning and thank you all for joining us. Let's start with slide 3. As anticipated, business conditions remained sluggish during our first fiscal quarter of 2016. Our forecast was for low single-digit top-line growth and EPS in the range of $1.28 to $1.33, and that's what we delivered.
+The strength of the US dollar, low oil prices, and relatively slower global demand continued to be headwinds for our customers. Consolidated organic sales were flat year-over-year, with weakness in our distribution segment counterbalanced by strength in all other operations. Within our distribution segment, end markets of strength like construction were offset by weakness in markets like energy, manufacturing, and metal fabrication. Today it is difficult to determine if we are at the bottom, nearing it, or if there is more to come. We are working hard to grow our top line, but we're frustrated with the decline of core customers offsetting hard-fought gains.
+While sales were lighter than I would have wanted, our focus on cost yielded the desired effect, and earnings of $1.31 were directly in the middle of our range. Excluding acquisitions, if you look at overall results, SG&A expenses were up less than 2% on a consolidated basis. And in the distribution segment we limited the increase in SG&A expenses to about 0.5%.
+We continued to generally limit new hires and backfills to only those critical, customer-facing, and safety-sensitive roles. We've also identified geographic and end-market areas with significant slowdowns and are currently reducing headcount in those areas. In total, headcount will be reduced by a few hundred. We continued to look for opportunities to reduce expenses without sacrificing great customer service and/or operating in an unsafe manner -- in a safe manner.
+As we've highlighted in the past, the Company continues to work on a number of process improvements and operating efficiency initiatives to further leverage our industry-leading platform, expand our operating margins, and further enhance our customer service offering. We have done and will continue to do what is right for shareholders and the Company for the long-term.
+We've accomplished lot, but we have more work ahead of us. And I'd like to thank all the Airgas associates for their continued hard work during these difficult economic times.
+On the positive side is the great cash flow characteristic of this business. As we have historically, during the second quarter of 2016 we continued to generate strong cash flow.
+Year-to-date free cash flow was $169 million, up 15% year-over-year. And adjusted cash flow from operations was $386 million, up 8% year-over-year. Fiscal year to date we've acquired 12 businesses with aggregate annual sales of $80 million.
+In the second quarter we repurchased 2.8 million shares on the open market for $271 million, thus returning $315 million to shareholders through repurchases and dividends this quarter. I'm a strong believer in the long-term development of the US economy, driven by solid fundamentals and fantastic innovation. Our recent investments to improve our platform, systems, and our product and service offering have positioned Airgas for growth when the economy improves.
+Currently, the economy is challenging, and Airgas is up for the challenge. We'll continue to work hard to provide customers with outstanding service to grow our position in the marketplace to continue to closely manage expenses. Consistent with our demonstrated track record, we remain committed to delivering sustainable long-term value to our shareholders.
+For the remainder of 2016, we expect modest business conditions, as described in our guidance. But I'm confident that growth will resume in the US economy, and that Airgas will benefit more so because of our resilient focus on the long-term and the actions we continue to take to make your Company stronger.
+Now I'll turn it over to Mike for a deeper dive.
+MIKE MOLININI, PRESIDENT AND CEO, AIRGAS, INC.: Thank you, Peter. Please turn to slide 4. We continue to invest in our sales and marketing strategy, which is focused on tailoring our value proposition to the unique needs of each major customer segment.
+Looking at our strategic accounts, weakness persists in our manufacturing and metal fabrication, energy and chemical, and primary metal segments as slowing global demand, low oil prices, and a strong US dollar continue to be headwinds for our customers. But we have seen continued strength in nonresidential construction and our food and beverage and retail markets.
+Overall, our strategic account sales were up 2% compared to prior year. In the second quarter sales of strategic products increased 2% over the prior year, with bulk gases and CO2 and dry ice showing strong gains, driven by both price and volume. Specialty gas sales posted a 9% year-over-year gain due to large single-customer activity. Excluding this short-term activity, specialty gas sales were up 4% year-over-year.
+Medical sales were flat, reflecting softness in the home care sector. Safety product sales were down 4% and our Radnor private-label hardgoods sales were down 5% year-over-year, both due to broad-based weakness in industrial activity.
+Our expanded Airgas total access telesales business continues to perform very well, again outpacing Company averages. This efficient sales channel enhances our customer touch in extending our reach to existing and potential customers historically underserved by traditional field sales coverage.
+Our enhanced e-business platform continues to expand and add new capabilities. Digital sales in the quarter were up [42]% over the prior-year period as sales on the new Airgas.com continued to set new records. The majority of the growth is coming from our core field and strategic account customers as they use the platform to help drive efficiencies in their operation and gain better access to information.
+This platform has already helped Airgas win some significant new business, as customers see this as an advantage over other packaged gases distributors in the space. Our new e-business capabilities are driving customer adoption at a rate of over 100,000 new locations annually.
+Sales in our distribution segment were challenged this quarter. Strength in nonresidential construction for downstream chemical and power projects was offset by weakness in upstream energy as well as weakness in manufacturing and metal fabrication. In the upstream energy market, the sustained low price of oil and natural gas today continued to pressure our customers. Continued investment in both downstream chemical and power projects gives us encouragement for the overall future of this end market.
+While we saw strength in the manufacturer of transportation equipment, the slowing global economy and strong dollar have challenged many of our manufacturing customers. Companies who support oil and gas, mining, and agricultural industries or those who depend on exports have been the hardest hit.
+On the positive side is nonresidential construction, which was led by general contractor activity. After a relatively slow calendar 2014, our March 2015 quarter saw year-over-year growth in nonresidential construction of 5%, the June quarter of 6%, and this September quarter of 5%.
+Our new district manager structure is gaining momentum. As a critical element of our strategy, our district managers are in place and establishing strong relationships with their customers. As you recall from Investor Day in December, the district manager role is essential to our future success and has the ideal span of control -- click and agile, close to the customer, branches and sales reps closely managed, with full P&L responsibility.
+We are continuing to methodically pursue process improvements and operating efficiencies in a number of key areas of operating and administrative platforms. As we continue to mature in our new SAP environment, we have a long runway of opportunities to improve both productivity and customer service.
+We're making steady progress on completing the investments in gases production assets I described earlier this year. Our new plant in Minooka, Illinois, is coming online this fall; and completion of all other announced production facilities are on time and on budget. In spite of the weak economy, all of these areas are operating very well and delivering encouraging results -- and will serve us well in both the current environment and especially as the economy improves.
+Going forward, as always, we will continue to look hard at expenses we control without sacrificing customer service or safety. As our guidance described, we have limited growth expectations for the remainder of the year. We continue to believe in the long-term growth prospects for the US, and we remain committed to delivering long-term growth and value.
+Airgas associates have a clear, well-understood mission on growing our top line by leveraging our expensive suite of products, services, and customer value creators. As such Airgas is well positioned to deliver market-leading organic growth.
+Thank you. And now I'll hand it off to Bob to review our financial results and guidance.
+BOB MCLAUGHLIN, SVP AND CFO, AIRGAS, INC.: Thank you, Mike, and good morning, everyone. Please turn to slide 5 for a review of our consolidated results in the second quarter. Sales increased 1% year-over-year to $1.37 billion, reflecting a 1% contribution from acquisitions and flat organic sales, with gas and rent up 3% and hardgoods down 5%.
+In aggregate, organic sales volumes were down 1% and pricing was up 1%. Consistent with recent quarters, areas of strength -- some of which were highlighted earlier in this call and noted in our earnings release -- were offset by weaknesses in other areas. On a sequential basis second-quarter sales were up 2% compared to the first quarter. Gas and rent represented approximately 65% of our sales mix in the quarter, up from both the prior year and the first quarter.
+Gross margin for the quarter was 56.3%, an increase of 50 basis points from the prior year. Selling, distribution, and administrative expenses increased 3% over the prior year, with operating costs associated with acquired businesses representing approximately one-half of that increase. The remaining increase primarily related to the incremental costs that support strong sales growth in our all other operations segment.
+Operating income for the quarter was $170 million, down 3% from last year's operating income; and operating margin was 12.4%, down 50 basis points from last year, reflecting margin compression in our distribution segment, which was driven by a modest decline in organic sales and a modest increase in operating expenses, excluding those costs associated with acquired businesses. While consolidated operating income for the quarter was down, EBITDA was up slightly.
+Operating income reflected the impact of an 8% increase in depreciation expense, driven by recent and ongoing investments in revenue-generating assets which have not yet been fully leveraged. Sequentially, operating income was up 12% and operating margins were up 110 basis points, primarily driven by lower sequential stock-based compensation expense, which is front-end loaded in our fiscal year due to the retiree eligible vesting provision, and also benefited from normal seasonal uptick in our all other operations segment.
+EPS of $1.31 was up 1% compared to the prior-year EPS of $1.30. There were approximately 74.6 million weighted average diluted shares outstanding for the quarter, a decrease of 1% year-over-year.
+Return on capital, which is a trailing four quarters calculation, was 11.6%, down 50 basis points from last year. Free cash flow for year to date was $169 million, up 15% over the prior year. And adjusted cash from operations was $386 million, up 8% over the prior year.
+Total debt increased by approximately $323 million year-over-year of approximately $2.8 billion at September 30, primarily related to share repurchases. Our fixed float debt ratio at the end of September was approximately 65% fixed, and our debt-to-EBITDA ratio was 2.8, within our target ratio of 2 to 3.
+Turning now to slide 6, we will look at our segment results. Sales in the distribution segment of $1.2 billion were flat in the current quarter compared to the prior year. Organic sales in the distribution segment were down 1%, with pricing up 1% and volumes down 2%. Gas and rent organic sales were up 2%, with pricing up 2% and volume flat.
+Distribution hardgoods organic sales were down 5%, with pricing flat and volume down 5%. My earlier comments related to consolidated sales and areas of strength being offset by weaknesses in other areas apply to the distribution segment as well.
+Gas and rent represented 60.5% of distribution sales in the second quarter, up 140 basis points compared to the prior year and up 50 basis points from the first quarter. Distribution gross margin was 56.3% -- flat compared to the prior year. The favorable mix towards higher-margin gas and rent and pricing gains were offset by margin pressure within gas and rent on higher helium costs, lower fuel surcharges, and a sales mix shift to lower margin bulk. These offsets, in aggregate, reduced gas margins by approximately 70 basis points.
+Distribution selling -- distribution and administrative expenses, excluding the impact of operating costs associated with acquired business, was held to a 0.6% increase over the prior year as we continue to focus on tight expense management. Operating income in the distribution segment declined by 9% year-over-year to $145 million, and operating margin declined 110 basis points to 12%. These were driven by a modest decline in organic sales and a modest increase in operating expenses, excluding the cost associated with acquired businesses.
+EBITDA was down by 3.5% for the distribution segment, which is favorable when compared to the 9% decline in operating income, as operating income reflected the impact of the 7.5% increase in depreciation expense, driven by recent and ongoing investments in revenue-generating assets which have yet to be fully leveraged. On a sequential basis distribution operating margin increased by 100 basis points, primarily driven by lower sequential stock-based compensation expense, which is front-end loaded in our fiscal year due to the retiree eligible vesting provision.
+All other operations reflects our CO2, dry ice, refrigerants, ammonia, and nitrous oxide business units. Sales for our all other operations were up 16% from the prior year due to strong organic growth, which was up 8%, as well as the inclusion of the Priority nitrogen acquisition. Sequentially, sales in all other operation segments increased by 7%, driven by the normal seasonality of the businesses that comprise the segment plus the acquisition addition.
+Gross margin for all other operations was 52.1%, an increase of 370 basis points from the prior year, primarily driven by higher ammonia and refrigerants margins plus the addition of the higher-margin priority nitrogen acquisition. Operating income for all other operations was $25 million, an increase of $8 million compared to the prior year. And operating margin of 14.5% was up 310 basis points year-over-year, both driven primarily by margin improvement in refrigerants and ammonia.
+Please turn to slide 7, capital expenditures. Year-to-date CapEx, excluding operating lease buyouts, was 8.3% of sales, reflecting continued investment in long-term revenue-generating assets, including the previously announced air separation units and our previously announced hydrogen production facility.
+The significant operating lease buyouts this year were related to leased properties related to the acquired Encompass Gas Group. Excluding major projects and operating lease buyouts, CapEx as a percent of sales was approximately 5%.
+Now I'd like to discuss our guidance for the remaining of the fiscal year. Slide 8 walks through the primary elements of our third-quarter, implied fourth-quarter, and full-year guidance. The first column on this slide shows the year-over-year walk for the third quarter, using fiscal 2015 third-quarter diluted EPS of $1.23 as the starting point.
+Helium net cost pressure is expected to be a headwind of $0.03 to $0.02. Share repurchases completed in the first and second quarters are expected to contribute $0.03, and the base business is expected to be down $0.08 at the low end and down $0.04 at the high end of the range, reflecting the challenging industrial economy; the potential for extended holiday shutdowns at certain of our customer base; as well as a difficult comp to a strong quarter in the prior year, where distribution organic sales were up 5%. In aggregate we are estimating diluted EPS in our third quarter to be in the range of $1.15 to $1.20, or down 7% to 2% over the prior-year EPS of $1.23 and reflecting organic sales growth down 1% to flat.
+The second column of this slide shows the year-over-year walk for our implied fourth-quarter guidance using fiscal 2015 fourth-quarter diluted EPS of $1.15 as the starting point. The variable compensation reset is expected to be a headwind of zero to $0.02. An extra selling day is expected to contribute $0.03. Acquisitions are expected to contribute $0.01, net of acquisition and integration cost. Helium net cost pressure is expected to be a headwind of $0.02 to $0.01. And share repurchase completed in the first and second quarters are expected to contribute $0.03. And the base business is expected to contribute $0.08 to $0.14, in part driven by the prior year being negatively impacted by the widespread severe weather conditions as well as the beginning of the rapid and significant decline in oil prices.
+Our guidance assumes a sequential uptick as we generally have experienced historically, as well as normal winter weather and not the unusually severe winters we experienced the last two years.
+In aggregate we are estimated (sic) diluted EPS for our fourth quarter to be in the range of $1.28 to $1.33, or up 11% to 16% over the prior-year diluted EPS of $1.15, and reflecting organic sales growth in the mid-single digits. The right-hand column of this slide reflects the year-over-year walk for our full fiscal 2016 diluted EPS guidance range.
+Variable compensation reset is now expected to be flat to a $0.04 headwind. Acquisitions are expected to contribute $0.01. Helium net cost pressure is expected to be a $0.09 to $0.07 headwind. Share repurchases completed in the first and second quarters are expected to be a $0.09 benefit, and our base business growth is expected to contribute $0.04 to $0.16, representing 1% to 3% growth on organic sales in the low single digits.
+In aggregate, we now expect diluted EPS for fiscal 2016 to be in the range of $4.90 to $5.00, which represents year-over-year growth of 1% to 3%. The challenging and volatile industrial economy makes it difficult to predict our near-term sales, and we will closely monitor daily sales for any indication of further weakening of the economy that could inhibit our ability to deliver EPS within our guided range.
+Third and full-year guidance does not include the impact of any additional share repurchases that may occur subsequent to September 30 under our current authorized share repurchase program. Our previous fiscal year 2016 guidance range for earnings per diluted shares was $4.90 to $5.05.
+Thank you. And now I'll turn it back to Joe to begin our question-and-answer session.
+JOE MARCZELY: Thank you, Bob. That concludes our prepared remarks. As we begin the Q&A portion of the call, to allow as many participants as possible to ask questions, please limit yourself to one question and one brief follow-up. Then get back in the queue if you have further inquiries. The operator will now give instructions for asking questions. Operator?
+Questions and Answers
+OPERATOR: (Operator Instructions) Vincent Andrews, Morgan Stanley.
+VINCENT ANDREWS, ANALYST, MORGAN STANLEY: Thanks, and good morning, everyone. Could you just talk a little bit about the cadence of the quarter and what you were hearing from your customers? I know, Peter, you made some comments at the beginning saying it's hard to say whether we are at the bottom, or if things are about to get worse. And I'm just wondering how things progressed during the quarter, how they have started off this quarter -- just maybe if we could start there?
+PETER MCCAUSLAND: Well, the manufacturing customers are down big time, and they are not predicting a turnaround anytime soon -- and especially the ones that manufacture equipment used in any commodity business. And the upstream gas business is soft, which is an understatement. You know, I think everybody is trying to bring down expectations, but with those manufacturing customers, sales are down so far -- you know, it's hard to imagine it's going to get worse, but it could. So we are just preparing ourselves.
+In the meantime nonresidential construction is helping us here. It's really strong. And then in certain product lines we're doing pretty well. Spec gas, bulk gas -- and that's through new customer acquisition, new applications.
+CO2 is another one where we're doing very well. And that's been in shortage. So we've had not only volume gains, but some price there as well, because a lot of sources in the CO2 business aren't that reliable, but ours -- we probably have the best reliability of any production network. So it's a mixed bag. And it's really those great big manufacturing customers and metal fab customers that are hurting us. Mike, do you want to add?
+MIKE MOLININI: Yes. To your question about the cadence as it relates to our manufacturing and metal fab customers, the decline in equipment sales to those customers has been pretty -- had continued through the quarter, and -- but the September rate and the August rate were comparable. Significant drops for the few months prior to that, but the last two months have been relatively flat with each other sequentially. So filler metals have been not merely the magnitude of the decline that we have seen in equipment.
+PETER MCCAUSLAND: And equipment is a capital item, and when things get tough, companies cut back on capital first. Filler metals reflect production and -- so anyway.
+VINCENT ANDREWS: All right. I'll leave it there. Thanks very much. Appreciate it.
+OPERATOR: David Begleiter, Deutsche Bank.
+DAVID BEGLEITER, ANALYST, DEUTSCHE BANK: Thank you. Peter, on the cost side you've taken out some headcount. Can you talk about where they are coming out of? And at what point would you become more aggressive on the headcount if things don't improve on the volume side?
+PETER MCCAUSLAND: Most of these heads are coming out of unfilled positions and attrition. Except, as I mentioned in my comments, there are certain geographic areas and end-market areas where there is extreme softness, like oil patch places, where we're being a little more aggressive.
+We have a lot of post-SAP efficiency programs underway. We have a new district manager structure, and we're making great headway in both of those areas -- the latter being really focused on sales and sales management. And if it gets worse, we'll do what we have to do. But this is a start.
+And we've always been a company that's reluctant to cut to the bone. And when the economies come back, we've always been the Company that shot ahead and did very well. So we see no reason to abandon that philosophy right now, but if things get a lot worse, we'll reconsider.
+DAVID BEGLEITER: And Peter, just quickly on the overall price environment, is it getting worse? Or is it about the same?
+PETER MCCAUSLAND: I'd say it's about the same. We've had three strategic price increases post-SAP, and we are getting what we thought we'd get out of them. And there's been some shortages in the market, which have resulted in some price elevation as well.
+But, you know, when business is slow, new opportunities are hard-fought. But I'd say for the most part, the industry is maintaining its discipline. We're not -- it's not one-and-done in the industrial gas business. You've got bulk tanks there. You've got assets -- you have a huge fixed investment in serving a customer on the gases side. And so the gas pricing tends to hold up fairly well. And you see more competition on the hardgoods side. But even there our margins are flat, I think; aren't they, Bob?
+BOB MCLAUGHLIN: Yes, hardgoods.
+PETER MCCAUSLAND: They're flat in hardgoods. So I'd say given the sluggishness, the pricing environment is pretty good.
+DAVID BEGLEITER: Thank you.
+OPERATOR: Bob Koort, Goldman Sachs.
+CHRIS EVANS, ANALYST, GOLDMAN SACHS: Good morning. This is Chris Evans on for Bob. When you talked about your guidance in fourth quarter, you highlighted the weak comp. Maybe you could explain sort of underlying expectations in light of that?
+BOB MCLAUGHLIN: For the fourth quarter we are looking for same-store sales or organic sales in the mid-single digits. And again, that's on the backdrop of a pretty significant step-down sequentially that we saw last year going from the third to the fourth quarter that was impacted by both severe, widespread winter conditions as well as -- there was a slowdown in economic activity as a result of the kind of rapid and significant decline in oil prices.
+So that has been with us now for the last three-plus quarters. So we are not expecting kind of the year-over-year impact that we experienced last year, given the relative stability that now is in oil pricing.
+MIKE MOLININI: And historically we've always seen kind of a sequential improvement going from third to the fourth quarter, with kind of the spring construction activity and some pickup in manufacturing.
+CHRIS EVANS: Just a quick follow-up: you talked, I think, on the call about optimism -- correct me if I'm wrong -- in downstream chemical and power. Could you talk about maybe how much that might offset some of the weaker segments?
+PETER MCCAUSLAND: I think this quarter -- our non-res construction in this quarter was -- the last three quarters -- has been up 5% to 6%, in that range. And what's on the horizon would indicate more of the same.
+CHRIS EVANS: Got it. Thank you.
+OPERATOR: Mike Harrison, Seaport Global Securities.
+MIKE HARRISON, ANALYST, SEAPORT GLOBAL SECURITIES: Peter, I was hoping you could comment in a little more detail on the pricing momentum that you are seeing, particularly in gas rent. That number was up 2%. Where are you seeing dock stock levels right now? Can you talk about the contributions related to any decline in fuel surcharges? And then also discuss what the helium component might be of that pricing number.
+PETER MCCAUSLAND: I think I'll let Mike handle that comprehensive question. Dock stock first.
+MIKE MOLININI: First of all, I'm not sure exactly what you mean by dock stock.
+PETER MCCAUSLAND: Are we seeing cylinders lined up on the dock?
+MIKE MOLININI: We're not. We're not. Our gases business -- this is also related to the cost question. Our gases volumes and business has held up really nicely, and -- which is where a lot of our manpower is spent in servicing the gas business. We have been able to continue to increase prices, because we are creating value for customers and are able to do that.
+The fuel surcharges, obviously, have come way down as the fuel prices has come down and will go back up as the fuel prices goes back up. Helium -- we had been raising helium prices for a long time, knowing that helium costs were going to be increasing. And I would say our helium pricing actions were consistent with the other gas product pricing actions.
+MIKE HARRISON: All right. And then was also hoping that -- get a little more detail on the all other segment. Obviously a very nice quarter there, and you mentioned the improvement in both the ammonia and refrigerants business. Was just curious how much of that ammonia improvement is temporary -- in other words, related to a lag or a movement in raw materials? And then, also, on the CO2 side, are you seeing improvement in operations there? Or is it just seasonal pickup?
+MIKE MOLININI: On ammonia, ammonia is relative -- the lag on the pricing and the cost. And that volatility right now, I would say, is relatively stable; and then most of our ammonia gains we expect to hold, hold.
+On CO2 we have probably the most reliable supply network in the industry. And during these outages we've been able to make some significant inroads, both in volume and in price, because of that network. And we expect to hold those gains as well.
+With respect to refrigerants, we spent two years talking about the decline of refrigerants and all of the issues related to why the decline, and we are now back on the road to recovery. Now, we're not anywhere near back to where we were three years ago at the peak. But at least now we're -- the path is clearer. We are making inroads on price and on volume, and the path forward looks good.
+MIKE HARRISON: All right. Thanks for the color, Mike.
+OPERATOR: Laurence Alexander, Jefferies.
+LAURENCE ALEXANDER, ANALYST, JEFFERIES LLC: Hi, on M&A -- when you acquire a small regional competitor, how quickly can you get them onto the Airgas systems, so SAP and the like, and rightsize the business to your standards? And are you seeing more consolidation on the $5 million to $10 million players, which will make M&A in 2016/2017 larger than historically?
+PETER MCCAUSLAND: Usually it's 60 to 90 days so we can get the computer converted. In 60 days we have the players sorted out. And we've done a lot of these, so we're pretty good at it.
+Regarding acquisitions, we have a lot in our pipeline in that size range. But we don't -- we're not in the business of predicting acquisitions or how many we might make, because there are so many different factors that impact that. But we're having a good year, and we hope it continues.
+LAURENCE ALEXANDER: And a follow-up, if I may. If sluggish demand continues into late 2016 and 2017, will you consider increasing your leverage ratios to the high end or above the range to support EPS growth?
+PETER MCCAUSLAND: You mean by buying back shares?
+LAURENCE ALEXANDER: Yes.
+PETER MCCAUSLAND: Well, we have that range between 2 and 3, and we want to keep it. We've been buying back some shares. We just reported some. And we're also generating a lot of cash.
+So if we decide to buy back shares, we think that we'll have plenty of cash to do that and still stay within that range. And if we were to make a big acquisition or something, then we always favor that -- a good core business acquisition over share repurchases. So that would take the place of some of the share repurchases.
+BOB MCLAUGHLIN: Right. But we also get pro-forma credit in our debt ratios for acquisitions, so that's not a one-for-one reduction.
+PETER MCCAUSLAND: Right.
+LAURENCE ALEXANDER: Understood. Thanks.
+OPERATOR: Mike Sison, KeyBanc.
+MIKE SISON, ANALYST, KEYBANC CAPITAL MARKETS: Peter, I'm just curious -- I know it's difficult to determine whether lower oil or the stronger dollar has -- you know, whether demand will worsen or bottom here. But what do you think needs to happen to get demand to go positive? Do you need those factors to reverse? Or are there other areas longer-term that -- key positives that demand can pick up over time?
+PETER MCCAUSLAND: I think one thing we look at is the US share of fixed investment, which has been in decline for 20 years. And now it looks to be like it's turning up. And we view that is very positive. And we think the growth in nonresidential construction is kind of pointing in that direction as well.
+We think abundant and inexpensive energy is ultimately going to be very good for the country. The strong dollar -- I don't know how it can get much stronger. That's certainly -- perhaps that's run its course; perhaps that will reverse a little bit if the Fed doesn't raise rates. But we have these currency wars going on around the country because the world economy in general is still pretty fragile, and governments are trying to stimulate growth.
+I'm not an economist, but I do believe that the US share of fixed investment is going to be significantly higher in the next 20 years than it was in the last 20 years, and that that will be partly driven by abundant and inexpensive energy and partly driven by the need for energy infrastructure, which -- there remains a lot that needs to be built out in this country -- and partly driven by other types of infrastructure that have been long neglected.
+And it's -- the offshoring of manufacturing has run -- it appears to have run its course. And new factories are being established in the United States now by both US and foreign companies. So we see -- we were in a period of de-industrialization, and I think that is reversing itself as well.
+All that sounds great, but we've got to live day-to-day. And I think what we're trying to do during these difficult times is strengthen our platform, improve in all areas, and gain share, so that when we do get the economic tailwinds our earnings will go up to the next plateau. That's what's happened in the past. You make your money during the hard times. You count it during the good times.
+MIKE SISON: Great. And then a quick follow-up in bulk gas -- that's one area that has continued to do well for you. Can you keep that momentum going? Maybe give us a little bit of color where the growth is coming from and why it could be sustainable going forward?
+MIKE MOLININI: You know, as we have said for years and years and years, having a million-customer packaged gas business is a built-in lead-generation machine for bulk gas opportunities. And I would say that it's also a built-in lead generation for MicroBulk opportunities. So the ability for us, using the tools we've got, and the additional production capabilities we've added, and our applications group, and our 1,500 field salespeople and specialists -- I would not expect that to slow down.
+MIKE SISON: Great. Thank you.
+OPERATOR: (Operator Instructions) Christopher Perrella, Bloomberg Intelligence.
+CHRISTOPHER PERRELLA, ANALYST, BLOOMBERG INTELLIGENCE: Good morning. Thanks for taking my call. Mike, have you seen any -- or how should we think about the returns on the district manager level that have been in place for about a year now? Is it more on the cost side, keeping that down at this point? Retaining sales? What are the puts and takes on that return?
+MIKE MOLININI: Well, actually, most of their time in the near-term -- at least currently, up until now -- has been all about leveraging the Airgas service offering, product and service offering, to drive organic growth. And I think history will tell whether this is true or not, but we believe that they are making significant inroads. And we believe that the fact that our gases business is holding up as well as it is in part because of those efforts.
+Unfortunately, we can't prove it. What we know is we know that, with clarity, the declines of some of our large core customers -- the magnitude of the declines of some of our core customers. And we believe in large part the fact that particularly our gases side is not down as much -- even our hardgoods businesses is not down as much as many of the manufacturers -- is in part because of that.
+CHRISTOPHER PERRELLA: All right.
+PETER MCCAUSLAND: Another thing that's helping us is during slow economic times, customers try to take costs out of their supply chain. And with the broadest product and service offering and the greatest local presence, with our platform all over the country, our strategic accounts business is making some significant gains because of our value proposition. And even -- there's a lot of big manufacturing customers in that base that are way, way down, but it's up. And that's because the customer rolls are up, and we are doing a good job communicating that value proposition.
+CHRISTOPHER PERRELLA: All right. Thank you. And a quick follow up on the fourth-quarter guidance. In terms of end-of-the-year shutdowns at your customers, do you have that up, I guess, versus what you've seen historically this year? And how does that compare with last year, with end-of-the-year customer shutdowns and the declining orders last year?
+BOB MCLAUGHLIN: Most of our third quarter, which is the quarter ending December, is where we have that more factored into, which is why -- you know, part contributing to the slightly negative to flat same-store sales and the challenge on the EPS line. So we are not contemplating that being a year-over-year headwind as it relates to our fourth-quarter, which ends in March of 2016.
+CHRISTOPHER PERRELLA: I apologize, Bob; I didn't mean the third quarter. I am confusing my dates. So year-over-year for the third quarter, are you seeing more customer -- or are you planning for more customer shutdowns?
+BOB MCLAUGHLIN: Our range contemplates that there could be some incremental challenge related to that on the low end.
+CHRISTOPHER PERRELLA: Okay. Thank you.
+OPERATOR: David Silver, Morningstar.
+DAVID SILVER, ANALYST, MORNINGSTAR: I wanted to ask you a question about, I guess, the medical line on your strategic products sales. So to me that's not an economically sensitive or industrial segment; yet if I look back five years or so, that's a line that has kind of trailed the overall strategic product sales group and, also, your overall gas and rent on a percentage growth basis.
+And at least the first glance, I would think your distribution network might be an advantage there. But could you talk about maybe why maybe medical hasn't kept up with the overall business or the overall growth in that market, favored by demographics? Thank you.
+MIKE MOLININI: In this particular quarter, the -- we have two -- let me make it simple -- pieces of our medical business. One is where we sell gases to users -- hospitals, surgery centers, doctors, dentists, people like that. That's one portion.
+The other portion is we sell gases -- primarily respiratory oxygen -- to home care companies, who then deliver it to the home. That particular portion -- that's the portion of our medical business that is challenged. It's not the end users; it's not the hospital segments; it's not the surgery centers. It's sales to the home care distributors.
+And it's challenged in two ways. There's a lot of consolidation going on in that piece. Reimbursement rates for those companies are coming down. Competitive bidding is going on. And there's also an obsolescence that's in play, where liquid dewars and high-pressure cylinders are being replaced with mechanical concentrators. So the demand by the home care customers is also declining. And at the same time there's a pretty significant consolidation going on within that segment.
+Linde Care is a big customer of ours, or was a very big customer of ours -- is still a material customer of ours, which was acquired by Linde. And then they fill a lot of the same gases, and they are migrating much of that supply to themselves rather than buy wholesale from us. So it's the offset of the home care segment is basically what caused it to be flat.
+DAVID SILVER: Okay. Thank you very much.
+OPERATOR: Ladies and gentlemen, at this time this does conclude our question-and-answer session. I'd like to turn the call over to Joe Marczely for any closing and additional remarks.
+JOE MARCZELY: Well, thank you all for joining us today, and we will be available all day for follow-up sessions. Thanks.
+OPERATOR: Ladies and gentlemen, that does conclude today's presentation. We appreciate everyone's participation.
+[Thomson Financial reserves the right to make changes to documents, content, or other information on this web site without obligation to notify any person of such changes.
+In the conference calls upon which Event Transcripts are based, companies may make projections or other forward-looking statements regarding a variety of items. Such forward-looking statements are based upon current expectations and involve risks and uncertainties. Actual results may differ materially from those stated in any forward-looking statement based on a number of important factors and risks, which are more specifically identified in the companies' most recent SEC filings. Although the companies may indicate and believe that the assumptions underlying the forward-looking statements are reasonable, any of the assumptions could prove inaccurate or incorrect and, therefore, there can be no assurance that the results contemplated in the forward-looking statements will be realized.
+THE INFORMATION CONTAINED IN EVENT TRANSCRIPTS IS A TEXTUAL REPRESENTATION OF THE APPLICABLE COMPANY'S CONFERENCE CALL AND WHILE EFFORTS ARE MADE TO PROVIDE AN ACCURATE TRANSCRIPTION, THERE MAY BE MATERIAL ERRORS, OMISSIONS, OR INACCURACIES IN THE REPORTING OF THE SUBSTANCE OF THE CONFERENCE CALLS. IN NO WAY DOES THOMSON FINANCIAL OR THE APPLICABLE COMPANY OR THE APPLICABLE COMPANY ASSUME ANY RESPONSIBILITY FOR ANY INVESTMENT OR OTHER DECISIONS MADE BASED UPON THE INFORMATION PROVIDED ON THIS WEB SITE OR IN ANY EVENT TRANSCRIPT. USERS ARE ADVISED TO REVIEW THE APPLICABLE COMPANY'S CONFERENCE CALL ITSELF AND THE APPLICABLE COMPANY'S SEC FILINGS BEFORE MAKING ANY INVESTMENT OR OTHER DECISIONS.]
+
+LOAD-DATE: September 29, 2017
+
+LANGUAGE: ENGLISH
+
+TRANSCRIPT: 102715a5820881.781
+
+PUBLICATION-TYPE: Transcript
+
+Copyright 2015  ASC Services II Media, LLC
+All Rights Reserved
+
+Copyright 2015 CCBN, Inc.
+
+Return to List
+
+2 of 2 DOCUMENTS
+
+
+FD (Fair Disclosure) Wire
+
+July 28, 2015 Tuesday
+
+Q1 2016 Airgas Inc Earnings Call - Final
+
+LENGTH: 7863 words
+
+Corporate Participants
+* Joe Marczely
+Airgas, Inc. - Manager of IR
+* Peter McCausland
+Airgas, Inc. - Executive Chairman
+* Mike Molinini
+Airgas, Inc. - President & CEO
+* Bob McLaughlin
+Airgas, Inc. - SVP & CFO
+Conference Call Participants
+* Ryan Merkel
+William Blair & Co. - Analyst
+* Mike Sison
+KeyBanc Capital Markets - Analyst
+* Bob Koort
+Goldman Sachs - Analyst 
+* Vincent Andrews
+Morgan Stanley - Analyst
+* Mike Harrison
+Global Hunter Securities - Analyst
+* Christopher Perella
+Bloomberg Intelligence - Analyst
+* David Silver
+Morningstar - Analyst
+* Steve Schwartz
+First Analysis Securities - Analyst
+* David Manthey
+Robert W. Baird & Co. - Analyst
+Presentation
+OPERATOR: Good morning and welcome to this Airgas first-quarter 2016 earnings conference call. Today's call is being recorded at the request of Airgas. (Operator Instructions). For opening remarks and introductions I will now turn the call over to the Manager of Investor Relations, Joe Marczely. Please go ahead, sir.
+JOE MARCZELY, MANAGER OF IR, AIRGAS, INC.: Thank you, Shannon. Good morning and thank you for attending our first-quarter earnings teleconference. Joining me today are Executive Chairman; Peter McCausland; President and CEO, Mike Molinini; and Senior Vice President and CFO, Bob McLaughlin.
+Our earnings press release was made public this morning and is available on our website, as are the teleconference slides. To follow along please go to Airgas.com, click the Investor Relation shortcut at the bottom of the screen and go to the Earnings Calls & Events page.
+During the course of our presentation we will make reference to certain non-GAAP financial measures and, unless otherwise noted, metrics referred to in today's discussion will be adjusted for any unusual items identified in our earnings materials. Reconciliation to the most comparable GAAP measures can be found in our earnings release and in the slide presentation.
+This teleconference will contain forward-looking statements based on current expectations regarding important risk factors which identified in the earnings release and our slide presentation. Actual results may differ materially from these statements, so we ask you please note our Safe Harbor language.
+We will take questions after concluding our prepared remarks as time permits and we plan to end the teleconference by 11 AM Eastern Time. I will now hand the call over to Peter to begin our review.
+PETER MCCAUSLAND, EXECUTIVE CHAIRMAN, AIRGAS, INC.: Thanks, Joe. Good morning and thank you all for joining us. As anticipated, business conditions remained sluggish during our first fiscal quarter of 2016, but they weren't awful given the fact that we are dealing with the strength of the US dollar, low oil prices, Greece, China, and about a million other things. Earnings of $1.16 were directly in the middle of our guidance range.
+Lately we have been getting some questions about expenses and I would like to make a few comments. In areas where it makes sense, and I would say this applies to most areas of the country, we are limiting new hiring to critical customer facing and safety sensitive roles and we are not backfilling positions vacant from retirements and departures.
+This has a mitigating impact on rising costs but we are not implementing a companywide reduction in force. We are tightly managing all expenses in our Distribution segment which accounts for 90% of our sales. We limited our year-over-year increase in operating expenses to 2% excluding the impact of acquired businesses, despite a near double-digit increase in healthcare costs.
+We have a lean, dispersed operating platform with over 1,200 operating facilities and approximately 17,000 employees, many of whom are customer facing. Our average cost of employees is not that high, but the cost to terminate, restructure then rehire and retrain when growth resumes is very high and does not make economic sense, especially at a time when our volumes are only modestly down.
+I have been in this business a long time, true value is created by doing the right things for the long-term. And that means not cutting expenses to the point of sacrificing customer service, losing valuable associates or operating in an unsafe manner.
+As managers we understand the need to balance the long-term with the short-term and we do that constantly and we've had pretty good success over the years. Total return to shareholders has grown at an annual compounded rate of over 18% since we went public in 1986, placing us among the highest return companies in the S&P 500.
+We have done and will continue to do what is right for the shareholders in the Company for the long-term. We don't know the future and we have proven that over the last couple years with our forecasts for the US economy. But we have a pretty good idea of the range of possibilities and we are confident that we can deal with the future however it turns out.
+We have a great knowledge of our industry and our customer segments. We have extensive experience through many business cycles. We have competed against companies with far greater resources over the last 33 years and today we are the market leader and the largest package gas Company in the world and the largest and the most promising market in the world.
+We have a proven track record of investing for the long-term, but we have demonstrated our capability to reduce expenses dramatically when necessary as in the recent Great Recession. We have managed to do this despite a very volatile US economy over the last 10 years and, at the same time, we have reduced the financial risk to our enterprise and returned capital to shareholders through dividends and share repurchases.
+More importantly, we have reduced operational risk over this time by building a strong organization for the long-term that has the power to regenerate itself.
+Now back to the quarter. As we have historically, during the first quarter of 2016 we continued to generate strong cash flow. Free cash flow was $120 million in Q1, up 15% year over year, and adjusted cash flow from operations was $232 million, up 13% year over year.
+The story of the development of Airgas is all about our significant and durable cash flow. We have used our significant cash flow to invest in our business, make acquisitions, pay dividends to our shareholders and repurchase shares.
+On the strength for strong stable cash flow and credit ratings we announced on May 28 a $500 million share repurchase program and through June we repurchased 1 million shares on the open market for $104 million.
+End markets of strength, like construction were offset by weakness in markets like energy, manufacturing and metal fabrication. In general the US refining complex is in good health. On the plus side low natural gas continues to afford very low feedstock or input costs; however, a high percentage of US chemical output needs to compete globally. So a strong US dollar and a slower global economy have become headwinds.
+Additionally, overseas firms are also benefiting from much cheaper oil derived feedstock due to lower oil prices. In general US chemical firms are cautious over the short-term but still bullish on their general competitiveness longer-term. This is evidenced by the fact that there has been very little letup in the construction and new chemical facilities slated to come on stream in late 2016 through 2019.
+This past quarter our non-res construction segment showed continued albeit modest acceleration in activity. Ultimately we expect those construction sales in many instances will be followed by strong operational sales.
+Fiscal year to date we acquired nine businesses with aggregate annual sales of $74 million. We are off to a good start this year and our pipeline looks good. We feel positive about achieving our goal of acquiring $100 million in sales during the year.
+I continue to be a strong believer in the long-term development of the US economy driven by solid fundamentals and fantastic innovation and abundant and inexpensive energy. Our recent investments to improve our platform, systems and our product and service offering have positioned Airgas for growth when the economy improves.
+In the meantime we will continue to work hard to provide customers with outstanding service to grow our position in the marketplace to continue to closely manage expenses. Consistent with our demonstrated track record we remain committed to delivering sustainable long-term value to our shareholders.
+For the remainder of fiscal 2016 we expect modest business conditions as described in our guidance. But I am confident that growth will resume in the US economy and that Airgas will benefit more so because of our resilient focus on the long-term and the actions we continue to take to make your Company stronger. Now Mike will provide a deeper dive.
+MIKE MOLININI, PRESIDENT & CEO, AIRGAS, INC.: Thank you, Peter. Please turn to slide 3. We continue to invest in our sales and marketing strategy which is focused on tailoring our value proposition to the unique needs of each major customer segment.
+In the first quarter our strategic account sales were up 3% compared to prior year, reflecting strength in nonresidential construction and our food, beverage and retail markets, with the latter being positively impacted by helium sales as we continue to win back business disrupted by the helium crunch in FY13.
+In the first quarter sales of strategic products increased 4% over the prior year with bulk gases, CO2 and dry ice showing the most improvement driven by both price and volume. Safety products and medical sales were both up 2% and specialty gas sales were only up about 1% due to broad-based moderation in core specialty gas volumes.
+Our Radnor private label hard good sales were flat year over year outpacing our total Hardgoods organic sales which declined slightly. Our expanded Airgas Total Access telesales business continues to perform very well. We have now completed the migration of our remaining legacy safety telesales business into our Airgas Total Access platform.
+Virtually all of our telesales reps are now selling the total suite of the Airgas product offering. Total Access continues to grow enhancing our customer touch and extending our reach to existing and potential customers historically underserved by traditional field sales coverage. On a comparable basis during the quarter Airgas Total Access sales again outpaced Company averages growing sales at 8% year over year.
+Our recently enhanced eBusiness platform is enabling customers to interact and transact with Airgas through a robust suite of functionality and services. Digital sales in the quarter were up 20% over the prior year period as sales on the new Airgas.com reached record levels.
+Our new eBusiness capabilities are driving customer adoption at a rate of over 100,000 new locations annually. Sales in our Distribution segment were challenged this quarter strength we saw in non-res construction was offset by weakness in energy and chemicals as well as weakness in manufacturing and metal fabrication.
+Within energy and chemicals the large and rapid decline in the price of oil experienced in the March quarter, and the sustained low price of oil today continue to pressure our customers engaged in upstream activity.
+While we saw continued strength in the manufacture of transportation equipment, the slowing global economy and strong dollar have challenged our manufacturing customers who support the energy segment or export.
+On the positive side, nonresidential construction, which was led by general contractor activity -- after a relatively slow calendar 2014, our March 2015 quarter saw year-over-year growth in non-res construction of 5% and this quarter year-over-year growth reached 6%.
+Our new district manager structure is gaining momentum. As a critical element of our strategy our district managers are in place and establishing strong relationships with their customers.
+As you recall from our Investor Day in December the district manager role is essential to our future success and has the ideal span of control -- quick and agile, close to the customer, branches and sales reps closely managed and with full P&L accountability.
+Going forward, as always, we will continue to look hard at expenses we control without sacrificing customer service or safety. We are continuing to methodically pursue process improvements and operating efficiencies in a number of key areas of our operating and administrative platforms.
+As we continue to mature in our new SAP environment we have a long runway of opportunities to improve both productivity and customer service.
+We are making steady progress on completing the investments in gases production assets that I described last quarter. Our new plant in Minooka, Illinois is coming online this fall and completion of all other announced production facilities are on time and on budget.
+In spite of the weak economy all of these areas are operating well and delivering encouraging results and will serve us well in both the current environment and especially as the economy improves.
+As our guidance describes, we expect industrial activity to modestly improve this year. As we look forward we continue to believe in the long-term growth prospects for the US and we remain committed to delivering long-term growth and value.
+All Airgas associates have a clear, well understood mission on growing our top line by leveraging our extensive suite of products, services and customer value creators. As such, Airgas is well-positioned to deliver market-leading organic growth.
+Thank you. And now I will hand it off to Bob to review our financial results and guidance.
+BOB MCLAUGHLIN, SVP & CFO, AIRGAS, INC.: Thank you, Mike, and good morning, everyone. Please turn to slide 4 for a review of our consolidated results for the first quarter.
+Sales increased 3% year-over-year to $1.35 billion, reflecting a 1% contribution from acquisitions and 2% organic sales growth with Gas & Rent up 5% and Hardgoods down 3%. In aggregate organic sales volumes were flat and pricing was up 2%.
+Consistent with recent quarters, areas of strength, some of which were highlighted earlier in this call, and noted in our earnings release, were offset by weakness in other areas.
+On a sequential basis first-quarter sales were up 4% on a daily basis compared to the fourth quarter with strong growth in all other operation segments, which reflects normal seasonality as well as underlying strength in refrigerants, CO2 and dry ice, as well as a modest uptick in our Distribution segment.
+Gas & Rent represented approximately 65% of the sales mix in the quarter, up from both the prior year and the fourth quarter. Gross margin for the quarter was 55.8%, an increase of 20 basis points from the prior year.
+Selling, distribution and administrative expenses increased 4% over the prior year with operating costs associated with acquired businesses representing approximately 1% of that increase. The remaining 3% of the increase reflects normal inflation and rising healthcare costs as well as incremental costs to support the strong sales volume growth in our all other operations segment.
+Operating income for the quarter was $153 million, down 2% from last year's operating income, and operating margins was 11.3%, down 50 basis points from last year reflecting the impact of the increase in SD&A expenses in the current flat organic sales growth environment related to our Distribution segment. Sequentially operating income was up 3% and operating margins were flat.
+EPS of $1.16 was down 2% compared to the prior year EPS of $1.18 and in the middle of our guidance range. There were approximately 76 million weighted average diluted shares outstanding for the quarter, an increase of 1% year over year. Return on capital, which is a trailing four quarters calculation, was 11.8%, down 30 basis points from last year.
+Free cash flow for the quarter was $120 million, up 15% over the prior year, and adjusted cash from operations was $232 million, up 13% over the prior year.
+Total debt decreased by approximately $21 million year over year to approximately $2.4 billion at June 30. Our fixed float debt ratio at the end of June was approximately 67.5% fixed and our debt to EBITDA ratio was 2.5, in the middle of our target range of 2 to 3.
+Turning now to slide 5 we'll look at our segment results. Sales in the Distribution segment were up 1% in the quarter over the prior year to $1.2 billion. Organic sales in the Distribution segment were flat with pricing up 2% and volume down 2%.
+Distribution, Gas & Rent organic sales were up 2% with pricing up 3% and volume down 1%. Distribution Hardgoods organic sales were down 3% with pricing up 1% and volume down 4%. My earlier comments related to consolidated sales in areas of strength being offset by weaknesses in other areas apply to the Distribution segment as well.
+Gas & rent represented 60% of Distribution sales in the first quarter, up 110 basis points compared to the prior year and up 60 basis points from the fourth quarter. Distribution gross margin was 56.4%, an increase of 40 basis points from the prior year, primarily reflecting the favorable sales mix shift toward Gas & Rent.
+Distribution selling -- distribution and administrative expenses, excluding the impact of operating costs associated with acquired businesses, increased 2% over the prior year. Operating income in the Distribution segment declined by 6% year over year to $132 million and operating margin declined 80 basis points to 11% reflecting the impact of the increase in SD&A expenses in the current flat organic sales growth environment.
+On a sequential basis Distribution segment operating margins declined 80 basis points primarily driven by stock-based compensation expense, which is front end loaded in our fiscal year due to the retiree eligible vesting provision.
+On a consolidated basis the sequential quarterly increase in stock-based compensation expense is offset by seasonality in our All Other Operations businesses. All Other Operations reflects our CO2, dry ice, refrigerants, ammonia and nitrous oxide business units.
+Sales for All Other Operations were up 18% from the prior year with organic sales up 16% primarily driven by strong sales in our refrigerants, CO2 and dry ice businesses. Sequentially sales in All Other Operations were up 20% driven by the normal seasonality of the businesses that comprise that segment as well as underlying strength in refrigerants, CO2 and dry ice.
+Gross margin for All Other Operations was 48.2%, a decrease of 110 basis points from the prior year, primarily driven by a sales mix shift towards our lower margin refrigerants.
+Operating income and All Other Operations was $21 million, an increase of $6 million compared to the prior year, and operating margin of 12.9% was up 180 basis points year over year both driven primarily by strong sales in our CO2 dry ice and refrigerants businesses.
+Please turn to slide 6, capital expenditures. First quarter CapEx, excluding operating lease buyouts, was 8.7% of sales reflecting continued investment in long-term revenue generating assets including the two previously announced air separation units and our previously announced hydrogen production facility.
+The significant operating lease buyouts this quarter were related to leased properties related to the acquired Encompass Gas Group. Excluding major projects and operating lease buyouts, CapEx as a percent of sales was approximately 5%.
+Now I'd like to discuss our guidance for the second quarter and full fiscal year. Slide 7 walks through the primary elements of our second-quarter and updated full-year guidance. The left-hand column on this slide shows the year-over-year walk through the second quarter using fiscal 2015 second-quarter EPS of $1.30 as a starting point.
+Variable compensation resets is expected to be a headwind of zero to $0.02; helium net cost pressure is expected to be a headwind of $0.02 to $0.01; and share repurchases completed in the first quarter are expected to contribute $0.01. And the base business is expected to be down $0.01 at the low end and up $0.05 at the high end of the range.
+In aggregate, we are estimating EPS for the second quarter to be in the range of $1.28 to $1.33, or down 2% to up 2% over the prior year diluted EPS of $1.30, and reflecting organic sales growth in the low-single-digits.
+The right-hand column on this slide shows the year-over-year walk for our updated fiscal 2016 diluted EPS guidance. Variable compensation reset is now expected to be flat to a $0.09 headwind. Helium net cost pressure is expected to be a $0.06 to $0.09 headwind.
+And the share repurchases completed in the first quarter are expected to be a $0.03 benefit. And our base business is expected to contribute an incremental $0.11 to $0.32 representing 2% to 7% growth on organic sales growth in the low- to mid-single-digits.
+In aggregate, we now expect diluted EPS for our fiscal 2016 to be in the range of $4.90 to $5.05, representing year-over-year growth of 1% to 4%.
+Second-quarter and full-year fiscal 2016 guidance does not include the impact of any additional share repurchases that may occur subsequent to June 30 under our current authorized share repurchase program. Our previous FY16 guidance range for EPS was $4.85 to $5.15.
+Thank you. And now I will turn it back to Joe to begin our Q&A session.
+JOE MARCZELY: Thank you, Bob. That concludes our prepared remarks. As we begin the Q&A portion of our call, to allow as many participants as possible to ask questions, please limit yourself to one question and one brief follow-up, then get back in queue if you have additional inquiries. The operator will now give instructions for asking questions.
+Questions and Answers
+OPERATOR: (Operator Instructions). Ryan Merkel, William Blair.
+RYAN MERKEL, ANALYST, WILLIAM BLAIR & CO.: I guess first, could you just help us understand the cadence of sales throughout the quarter? And then, could you also possibly comment on what you are seeing in July so far?
+BOB MCLAUGHLIN: Yes, Ryan, relative to the cadence in the quarter we are reporting on, it was basically fairly steady throughout each month, April through June, no significant upticks or downticks.
+Relative to sales July month to date, similar to the first quarter in Distribution with roughly flat year-over-year with Gas outperforming Hardgoods. Still seeing strong year-over-year improvement in All Other Operations segment, but not quite the strength of the 16% that we reported in this quarter.
+RYAN MERKEL: Okay. And then just a follow-up on non-res. I am curious if you are seeing just better growth in maybe commercial and institutional versus maybe the infrastructure stuff or products tied to oil and gas, is that a little softer. Just dive a little deeper into that if you could.
+PETER MCCAUSLAND: Well, we are seeing it across the board in non-res. A lot of stuff in the Gulf Coast of course having to do with downstream energy chemicals business. Continue to see LNG terminals, Natural Gas Pipelines, some power plants, water systems, stadia, bridges, highways.
+So it is not really commercial, but hospitals -- we are seeing some growth in new healthcare facilities. So it is pretty much across the board and it is across the country. It is stronger in the Gulf Coast, of course, with all the announcements of the major facilities, some of which have been postponed or canceled.
+But for every one that has been postponed or canceled there has been new ones announced. So it is a bright spot and we think we are going to see continued improvement in non-res construction.
+RYAN MERKEL: Very helpful. Okay, thanks.
+OPERATOR: Mike Sison, KeyBanc.
+MIKE SISON, ANALYST, KEYBANC CAPITAL MARKETS: Peter, when you think about the -- or Mike, whoever wants to sort of address this -- but when you think about the base business reducing the top end for fiscal 2016 from plus 10 to plus 7. Any particular areas weakness that you are seeing that caused you to kind of take out the really high end of the range?
+PETER MCCAUSLAND: I will take a stab and then Mike can jump in. With low oil prices impacting customers who manufacture products that are used in the drilling industry, and the strong dollar impacting manufacturers who export machinery and other things manufactured from metals, we are cautious about our big metal fab customers, they are weak and there outlook isn't great.
+The smaller metal fab customers seem to be doing okay because there is some underlying strength in the US economy, even though exporters are being disproportionately impacted by the strong dollar. So it is mostly in manufacturing and metal fab where we are really cautious and we are just going to have to see how the year develops. Mike, do you have any --?
+MIKE MOLININI: Yes, I was going to go pretty much in the same place, that the biggest difference now between now and when we originally put the plan together is the weakness in our larger manufacturing customers.
+MIKE SISON: Got it. And then in terms of pricing, that is certainly a part of the equation when you think about the base business growth in 2016. Do feel pretty good about the levels you are at and are there opportunities to -- particularly with your strategic pricing initiatives, to gain a little bit more as the year unfolds?
+MIKE MOLININI: Yes, we are continue to work on -- we are working on that all the time. So, yes.
+BOB MCLAUGHLIN: Yes, we are not expecting a drop-off, Mike, of any significance.
+MIKE SISON: Great, thank you.
+OPERATOR: Bob Koort, Goldman Sachs.
+BOB KOORT, ANALYST, GOLDMAN SACHS: Did you guys see -- I know in the last quarter you had some weather issues and we have seen some other companies that have weather impacts. Did you see any of that in the quarter?
+MIKE MOLININI: We saw a little bit in Houston when they had the heavy rains and the floods. That was the one business unit that I would say was more impacted than others. But -- or not Houston -- Texas, let me just call it Texas.
+BOB KOORT: Yes, we got a lot of rain. I am aware of that one, unfortunately. How about -- can you talk a little bit about regionalized activity beyond that? I mean there has been pockets, ebbs and flows of different end markets, energy, metal manufacturing, etc. Could you give us a tour around the country of where you have seen strength or particular weakness outside of the Houston issue?
+MIKE MOLININI: I think the weakest area we have seen would be what we would call our central, which would be Oklahoma, Texas, New Mexico -- clearly a step down for them. That is the heart of the drilling belt. I think the North --.
+BOB MCLAUGHLIN: North Central and the Midwest, Mike, for the manufacturing.
+MIKE MOLININI: We have seen a step down in the big manufacturers. Surprisingly we are seeing some improvement in the West and in the South and even in the -- what we would call the Northeast part of our North division would be -- is showing some improvement.
+BOB KOORT: And I heard your comments on helium. I am not sure you made or I missed comments on refrigerants. But can you talk about what is going on in there and does this trade effort by the fluoro refrigerant industry mean much to you going forward?
+MIKE MOLININI: Well, it could. If they were -- you mean the anti-dumping suit, things like --?
+BOB KOORT: That is right.
+MIKE MOLININI: Yes. Well if they were successful it would certainly have an impact. I mean, now we are on both sides of that because we buy refrigerants for resale from the major manufacturers, we also import some of the refrigerants and some of the blends directly from China. So, I mean I am not -- we are not sitting here expecting that that's the key to our success.
+I think refrigerants -- we had a very nice refrigerants business. It was really significantly hurt by the EPA allocation guidelines and I think now we are starting our climb back out of that. But it is going to -- we are certainly going to climb back a lot slower than we declined.
+BOB KOORT: Got it. Thank you.
+OPERATOR: Vincent Andrews, Morgan Stanley.
+VINCENT ANDREWS, ANALYST, MORGAN STANLEY: Could you comment -- you are obviously well ahead of pace on your goal in terms of acquisitions and that follows a number of years where it seemed like a difficult environment. So any comments on what you think has changed that is allowing you to be at this pace. And do you think it is possible that we will see a bit of a make whole following the past couple of years?
+PETER MCCAUSLAND: Well, we could do better than $100 million, but it is hard to predict them. I think -- what has changed? You know I don't think there has been that much of a change.
+Basically it is driven by the personal preferences of the owners and it is just so -- we have been cultivating independent distributors for years. And it just so happened that the pipeline started to fill up nicely this year. And I don't know if it is the seller's view of taxes or the economy or whatever drives it, but it has gotten better.
+And the Priority acquisition was different than our normal acquisitions. That was sort of a product line service extension for us. We were using that Company and had a great relationship with them before hand before we bought it.
+Our customers love that we have the capability and so that was a special opportunity. But I wouldn't -- Vincent, I wouldn't call it dramatic increase in distributor acquisition activity. It is just a nice little uptick.
+VINCENT ANDREWS: Okay. And then maybe just as a follow up. How are you thinking about the price volume trade-off sort of in the current environment? It just seemed like your price was up a couple percent, your volume was down a couple percent. Is that just sort of random how that played out with offsets in different parts of the businesses or is there something changing about the strategy?
+PETER MCCAUSLAND: There are a lot of inputs there. But some of our biggest customers are down and they pay lower prices than the smaller customers and that is one of the virtues of this business. And you get a little improvement in margin. A lot of that decline in Hardgoods sales was wire and other types of Hardgoods used in production which have the lowest margins we have.
+So it is not just the Hardgoods but it is the size of the customer that happens to be down now that are having a positive impact. But there are other inputs, continued strategic pricing efforts and private label share of total Hardgoods which is higher margin. So there is a lot of different things. But generally when our big customers go down, our margins tend to go up a little bit.
+BOB MCLAUGHLIN: I think short-term price will outpace volume, but as we get to the back half of the year and particularly the fourth quarter we would expect volume to play a more significant balance piece.
+VINCENT ANDREWS: Thanks, sounds great. Thanks very much.
+OPERATOR: Mike Harrison, Global Hunter Securities.
+MIKE HARRISON, ANALYST, GLOBAL HUNTER SECURITIES: Peter, just was hoping to get a little bit more detail on the expense discussion that you kind of led off the call with. So the SG&A numbers are kind of heading in the wrong direction and that has been a trend over the past few years as a percent of sales.
+You mentioned some actions you are taken to kind of curve expenses but definitely short of some broader action. At what point you take a look at where demand levels are trending and determine that you need to take some additional actions in order to rationalize the cost structure?
+PETER MCCAUSLAND: Well, we are looking at it every day. In my remarks today I tried to explain the process. Our expenses -- with soft volume growth expenses as a percentage of gross profit tends to climb and -- but it certainly isn't out of hand. And I think we have done a reasonably good job.
+I have been in this business a long time and I certainly don't know all the answers. But I have had the opportunity to watch our competitors, our large competitors cut the hell out of the packaged gas business every single time there is a short business downturn. And today we are a $5 billion Company and they are small, very small or nonexistent or much -- and in one case much smaller than we are.
+And so, we are very cautious. We know that expenses today that might make our analysts happy could hurt the upside tomorrow. And -- but I'm not telling you I know all the answers, I don't. And we review it every single management committee.
+We have got certain companies where business is down more than others because of geographic concentrations of customer segments that are down and they are taking action to reduce costs. And again, as I said in my opening remarks, if it gets really bad we know what to do, we have demonstrated that.
+We took a tremendous amount of cost out during the Great Recession. And that was the first time we ever had a down year in same-store sales was during the Great Recession. So this has been a very unusual time. But I think we have demonstrated our capability of doing that and I can assure you we are looking at it all the time.
+MIKE HARRISON: Maybe kind of a related question just on -- SAP was supposed to give you a toolset to be able to reduce some of the back office costs. So if I could delve into the SG&A piece and look at maybe more of the admin/back office costs, have those been declining over time or are we still kind of yet to leverage the opportunities there?
+PETER MCCAUSLAND: Well, not as much as we hoped. SAP had three main baskets of benefits. What were they? Pricing, Total Access and the admin cost back-office stuff. We made the decision -- because of challenges during the implementation process and the need to standardize business processes post SAP in order to eliminate errors and whatnot.
+We made the decision to actually not only postpone some of those back office expense reductions, but we actually spent more money to make sure that we got it absolutely right. And we have made tremendous improvement as a result of that decision and the back-office stuff will take place let's say over the next 24 months we will begin to see some expense reduction in that basket.
+But so far very little of that was achieved, even though our overall SAP benefits exceeded the aggregate number we put out there.
+MIKE MOLININI: I made a comment earlier in my remarks about how we are systematically and methodically working on process improvements. And what we don't need to do is have some big reduction in force that reduces the customer service experience, even the administrative customer service experience for our over 1 million customers.
+What we are working on is we are working on the process improvements that will eliminate the need for as many of those folks as we have now, which we will -- and it will not be a major -- it will be a slow reduction over time as opposed to some big event.
+And in some cases those programs are well underway for that to happen. But to Peter's point, you won't see one big change, you will see it happening in small amounts on an ongoing basis. But we are committed to delivering those and we know how we are going to get them out as well.
+MIKE HARRISON: All right, thanks for the color.
+OPERATOR: (Operator Instructions). Christopher Perella, Bloomberg Intelligence.
+CHRISTOPHER PERELLA, ANALYST, BLOOMBERG INTELLIGENCE: A question on the pace of the share repurchases. Is the first quarter repurchase pace the average over the course of the program? Is it going to ebb or flow; is it more opportunistic?
+PETER MCCAUSLAND: When it comes to repurchases, we don't believe in just putting a big repurchase out there and not doing anything about it. We want to go and repurchase the shares within a reasonable period of time. And we generally -- because anything can happen, we generally don't like to commit to any specific end date. But we have a demonstrated track record of completing the purchases within a reasonable period of time after the announcement.
+Now, within that period of time we try to be as opportunistic as possible and buy the shares at the lowest possible price. So sometimes we are in the market, other times we take a rest. And we bought a million shares, I think, in the quarter.
+CHRISTOPHER PERELLA: All right. And just to follow up on the SG&A, with it tracking I think at 3% in the first quarter excluding acquisitions, I think, Peter, you said it was supposed to slow to 2% for the year. How does that growth in SG&A slow over the course of the year?
+BOB MCLAUGHLIN: The 2% was on the Distribution segment, which is 90% of our sales excluding acquisitions. That was up 2% and part of our comment around tightly managing expenses. The 3%, the increase to 3% on the consolidated basis, was the incremental cost to support the 16% sales growth in the All Other Operations segment.
+CHRISTOPHER PERELLA: Okay, thank you.
+BOB MCLAUGHLIN: And both consolidated and Distribution had the headwind, as we disclosed, of about 1% of those respective increases were from acquisitions.
+CHRISTOPHER PERELLA: All right, thank you very much.
+OPERATOR: David Silver, Morningstar.
+DAVID SILVER, ANALYST, MORNINGSTAR: So I have a smaller question, then maybe a bigger one. First question is on your bulk gas sales. So the plus 7% this quarter comes on top of a plus 5% 12 months ago, and I believe the comments were that there were some price and volume. So correct me if I am wrong, but there is no new facilities in that mix.
+So maybe could you just comment on where the bulk volume came from and then secondarily, whether the price increases you are seeing are more company-specific, certain customers or contracts, or it is reflective of the broader market? Thank you.
+MIKE MOLININI: Okay, well, first of all, all of our bulk customers are under contract. We did not -- we have not commissioned any new air separation plants. However, many of our air separation plants have available capacity in them to sell to additional customers, which is what we are trying to do.
+The split between volume and price is probably about half and half (multiple speakers) slightly more volume, slightly more volume. But price is material. And we continue to mine the market looking for opportunities. Having as many packaged gas customer relationships as we do provides an ongoing pipeline of potential new bulk opportunities.
+DAVID SILVER: Okay. And I am going to apologize in advance, this question might be a little messy. But back in December you did set out your long-term targets for I think fiscal 2018. And I will stipulate that the economic environment is less than what you had built in there.
+But also built in there are a number of Company directed initiatives -- the district manager role, the SAP program, which you have discussed, the telesales and enhanced e-commerce platform.
+So as you look at things eight, nine months since that meeting, could you maybe talk about whether you guys are comfortable that the moving parts that you are controlling or you are responsible for are kind of on target for where you hoped they would be at this point and on target maybe to be where you want them to be in fiscal 2018? Thank you.
+PETER MCCAUSLAND: Well, let me just comment generally that when we set out those goals and described those programs we did it with a lot of forethought that we laid out with transparency our goals for making Airgas stronger. And in my view, my personal view we have made tremendous progress.
+There are times in this business when you really do a good job and strengthen your company, but the economic environment doesn't make that particularly evident. And this happens to be one of those times.
+We have been in slow periods before, our cash flow always stay strong, our margins sag a little bit, our returns sag a little bit. But we continue to become -- to work hard to become a better Company. And I think, Mike, you ought to talk a little bit about the specifics of programs that we mentioned.
+MIKE MOLININI: Yes, to make this a short discussion, think of it this way. There were really three legs of the stool that had to contribute for us to get to that level of return that was in our Investor Day. One of the legs was continuing to make $100 million a year of acquisitions. And I think we still feel -- we are on pace, we feel comfortable about that so I think that is solid.
+The second one was we had a block of cost reductions, operational efficiency type cost reductions in there which are directly related to the process improvements and the approach we are taking to that. And I think you don't see under the covers of that, but I think we feel pretty comfortable that we have a bead on the programs and how it is we are going to go about doing that.
+And then the third leg is we needed top-line sales growth, which was a combination of volume and price, to which we would maintain tight cost control on the platform that we had built that had the capacity in it.
+And I think you are starting to see the cost as we lap some of the investments that we made to build out the Total Access group and to build out our eBusiness group. The Distribution group's OpEx is up 2%. The issue is the top-line -- pricing continues to strengthen. The district managers are all in place and the cost to invest in that is now also lapping.
+So now it is all about the top-line organic growth, which is the last piece. And that is the piece, the timing of which, we are -- we have trouble predicting that. So other than that timing piece all of the other pieces we are feeling really, really good about.
+DAVID SILVER: Got you. Okay, thank you very much for that.
+OPERATOR: Steve Schwartz, First Analysis.
+STEVE SCHWARTZ, ANALYST, FIRST ANALYSIS SECURITIES: I am sorry if I missed this in the prepared remarks, but regarding CO2 and dry ice, you make a comment in your slide deck about higher outage surcharges. And I'm just wondering, given the strong performance of that part of the business, is that something that we need to adjust or account for in coming quarters? Was it big enough to be a stand out?
+MIKE MOLININI: No. It pretty well balances the additional expense. So I wouldn't pay a lot of attention -- I wouldn't worry about that in your modeling.
+PETER MCCAUSLAND: It is a fact of life in the CO2 business. We have got lots of sources and some of them have a habit of going up and down and you have to haul in product.
+STEVE SCHWARTZ: Okay, very good. Thank you.
+OPERATOR: David Manthey, Robert W. Baird.
+DAVID MANTHEY, ANALYST, ROBERT W. BAIRD & CO.: This is a what have you done for me lately question. But when you look at the Distribution segment specifically and gross margins being up 40 basis points year over year.
+With the gas mix up -- Gas & Rent up 110 basis points, private label was flat. But you noted the mix of small customers and positive pricing. I am just wondering why gross margins perhaps weren't up more. And maybe if you can just talk about what the offset is within that segment.
+BOB MCLAUGHLIN: Well, I think some of it is relative to the mix within the product line. So some lower margin gases as it relates to that --.
+PETER MCCAUSLAND: Bulk was up.
+BOB MCLAUGHLIN: Bulk was up --.
+PETER MCCAUSLAND: Much higher than cylinders.
+BOB MCLAUGHLIN: Yes, so there is mix within the Gas & Rent and Hardgoods and in both cases, Peter is right, the bulk outperformance in bulk is a lower margin on the gross profit but also larger volumes.
+So there is nothing really significant, Dave, underneath the covers, it is really kind of mix within that that is maybe less -- producing less of an increase than perhaps you modeled or expected.
+DAVID MANTHEY: Okay. And second, what product categories have seen the most success under the Total Access platform? I think you said that Total Access is still growing faster than the overall corporate average. Why would safety and admin be so flat in that type of environment?
+MIKE MOLININI: Total Access is a -- if you look at the growth of 8% is -- on existing customers it is primarily -- it is more heavily weighted toward Hardgoods than it is to Gases. And on newly acquired customers about just under half of those customers are buying Gases. So that is -- that is a wide blend of what it is we are selling through that program.
+So I haven't looked -- I mean I -- I don't have that level of precision at this moment about how much of it is private label versus how much of it is branded versus --. Yes, I don't have another layer of level down below that.
+DAVID MANTHEY: Okay. I noted that you had indicated that you'd transitioned your legacy safety business to Total Access. And just given the new platform and the energy around that asset, I would have thought you would see faster growth there. Just wondering in general what categories are driving the majority of that growth (multiple speakers)?
+MIKE MOLININI: Well we did deliver 8% growth when the core business delivered nothing. So we kind of felt that 8% was doing pretty well with our Total Access business.
+PETER MCCAUSLAND: (Inaudible) legacy safety and that lowered our growth rate, right?
+BOB MCLAUGHLIN: A little bit.
+PETER MCCAUSLAND: Yes.
+DAVID MANTHEY: Okay, well we will follow up. Thank you.
+OPERATOR: And, ladies and gentlemen, that does conclude today's question-and-answer session. I would like to turn the conference over back to Joe Marczely for closing remarks.
+JOE MARCZELY: Again we thank you all for joining us today and we will be available all day with any follow-up questions you may have. Thank you.
+OPERATOR: And that does conclude today's conference. We do thank you for your participation. You may now disconnect. Have a great rest of your day.
+[Thomson Financial reserves the right to make changes to documents, content, or other information on this web site without obligation to notify any person of such changes.
+In the conference calls upon which Event Transcripts are based, companies may make projections or other forward-looking statements regarding a variety of items. Such forward-looking statements are based upon current expectations and involve risks and uncertainties. Actual results may differ materially from those stated in any forward-looking statement based on a number of important factors and risks, which are more specifically identified in the companies' most recent SEC filings. Although the companies may indicate and believe that the assumptions underlying the forward-looking statements are reasonable, any of the assumptions could prove inaccurate or incorrect and, therefore, there can be no assurance that the results contemplated in the forward-looking statements will be realized.
+THE INFORMATION CONTAINED IN EVENT TRANSCRIPTS IS A TEXTUAL REPRESENTATION OF THE APPLICABLE COMPANY'S CONFERENCE CALL AND WHILE EFFORTS ARE MADE TO PROVIDE AN ACCURATE TRANSCRIPTION, THERE MAY BE MATERIAL ERRORS, OMISSIONS, OR INACCURACIES IN THE REPORTING OF THE SUBSTANCE OF THE CONFERENCE CALLS. IN NO WAY DOES THOMSON FINANCIAL OR THE APPLICABLE COMPANY OR THE APPLICABLE COMPANY ASSUME ANY RESPONSIBILITY FOR ANY INVESTMENT OR OTHER DECISIONS MADE BASED UPON THE INFORMATION PROVIDED ON THIS WEB SITE OR IN ANY EVENT TRANSCRIPT. USERS ARE ADVISED TO REVIEW THE APPLICABLE COMPANY'S CONFERENCE CALL ITSELF AND THE APPLICABLE COMPANY'S SEC FILINGS BEFORE MAKING ANY INVESTMENT OR OTHER DECISIONS.]
+
+LOAD-DATE: August 21, 2015
+
+LANGUAGE: ENGLISH
+
+TRANSCRIPT: 072815a5752050.750
+
+PUBLICATION-TYPE: Transcript
+
+Copyright 2015 CQ-Roll Call, Inc.
+All Rights Reserved
+
+Copyright 2015 CCBN, Inc.
+

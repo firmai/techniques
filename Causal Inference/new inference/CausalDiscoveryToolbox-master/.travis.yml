@@ -1,0 +1,33 @@
+# Setting up automatic travis test build.
+sudo: required
+branches:
+  only:
+  - master
+
+language: python
+python:
+  - "3.5"
+  - "3.6"
+# command to install dependencies
+before_install:
+  - sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu trusty/" >> /etc/apt/sources.list'
+  - gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+  - gpg -a --export E084DAB9 | sudo apt-key add -
+  - sudo apt-get update
+  - sudo apt-get install r-base
+  - sudo apt-get install libgmp3-dev
+  - sudo apt-get install build-essential
+  - sudo apt-get install libv8-3.14-dev
+  - sudo Rscript -e 'install.packages(c("V8","sfsmisc","clue","randomForest","lattice"),repos="http://cran.us.r-project.org")'
+
+  - sudo Rscript -e 'source("http://bioconductor.org/biocLite.R"); biocLite(c("CAM", "SID", "bnlearn", "pcalg", "kpcalg", "D2C"))'
+
+install:
+  - if [[ `python3 -c 'import sys ; print(".".join([str(i) for i in sys.version_info[:][:2]]))'` == '3.5' ]]; then pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp35-cp35m-linux_x86_64.whl; fi
+  - if [[ `python3 -c 'import sys ; print(".".join([str(i) for i in sys.version_info[:][:2]]))'` == '3.6' ]]; then pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linux_x86_64.whl; fi
+  - pip3 install -r requirements.txt
+  - pip3 install pytest
+  - pip3 install .
+# command to run tests
+script:
+  - pytest

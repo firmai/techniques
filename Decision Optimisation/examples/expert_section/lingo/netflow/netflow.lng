@@ -1,0 +1,22 @@
+model:
+
+@FILE("ticdat_netflow.lng")
+@FILE("ticdat_netflow.ldt")
+
+sets:
+    flow(commodities, nodes, nodes): flow_quantity;
+endsets
+
+MIN=@SUM(cost(k, i, j): flow_quantity(k,i,j)*cost_cost(k,i,j));
+
+@FOR( inflow( k, i):
+   @SUM( arcs( j,i): flow_quantity(k,j,i)) + inflow_quantity(k,i) = @SUM(arcs(i,j): flow_quantity(k,i,j));
+         );
+
+@FOR( arcs(i,j):
+  @SUM( commodities(k): flow_quantity(k,i,j)) <= arcs_capacity(i,j);
+ );
+
+@FILE("ticdat_netflow_output.ldt")
+
+end

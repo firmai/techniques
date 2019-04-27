@@ -1,0 +1,5 @@
+*.pyc
+/venv/
+/dinvest.egg-info/
+/.cache/
+/.eggs/

@@ -1,0 +1,7 @@
+strategy        |         60
+merger          |          0
+mergers         |          1
+acquisition     |        122
+pricing         |         82
+long-term       |         27
+execute         |         14

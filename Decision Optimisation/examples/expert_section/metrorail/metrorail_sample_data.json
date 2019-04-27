@@ -1,0 +1,104 @@
+{
+  "amount_leftover": [
+    {
+      "Amount": 0.0
+    }, 
+    {
+      "Amount": 0.25
+    }, 
+    {
+      "Amount": 2
+    }, 
+    {
+      "Amount": 3
+    }, 
+    {
+      "Amount": 4
+    }, 
+    {
+      "Amount": 1.25
+    }, 
+    {
+      "Amount": 1.0
+    }, 
+    {
+      "Amount": 8.5
+    }, 
+    {
+      "Amount": 1.75
+    }, 
+    {
+      "Amount": 0.75
+    }, 
+    {
+      "Amount": 1.5
+    }, 
+    {
+      "Amount": 0.5
+    }
+  ], 
+  "load_amounts": [
+    {
+      "Amount": 2.25
+    }, 
+    {
+      "Amount": 1
+    }, 
+    {
+      "Amount": 3
+    }, 
+    {
+      "Amount": 5
+    }, 
+    {
+      "Amount": 4.5
+    }, 
+    {
+      "Amount": 40
+    }, 
+    {
+      "Amount": 10
+    }, 
+    {
+      "Amount": 20
+    }
+  ], 
+  "number_of_one_way_trips": [
+    {
+      "Number": 2
+    }, 
+    {
+      "Number": 4
+    }, 
+    {
+      "Number": 6
+    }, 
+    {
+      "Number": 8
+    }, 
+    {
+      "Number": 10
+    }, 
+    {
+      "Number": 12
+    }, 
+    {
+      "Number": 14
+    }, 
+    {
+      "Number": 16
+    }, 
+    {
+      "Number": 18
+    }, 
+    {
+      "Number": 20
+    }
+  ], 
+  "parameters": [
+    {
+      "Key": "Amount Leftover Constraint", 
+      "Value": "Equality"
+    }
+  ]
+}

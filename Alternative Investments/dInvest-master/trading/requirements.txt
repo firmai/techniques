@@ -1,0 +1,7 @@
+pytest>=3.0.3
+schedule>=0.3.2
+web3>=3.2.0
+zipline>=1.0.1
+pandas==0.17.0
+quandl>=3.0.1
+wget>=3.2.0

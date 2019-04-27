@@ -1,0 +1,332 @@
+\documentclass{beamer}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+
+\title{Causal Inference Introduction}
+\author{Paul English}
+\date{\today}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\section[Outline]{}
+\frame{\tableofcontents}
+
+
+\section{Introduction}
+
+\frame{\frametitle{Correlation does not imply causation}
+
+\begin{figure}
+  \centering
+    \includegraphics[width=\textwidth]{cage_correlation.png}
+\end{figure}
+
+\url{http://www.tylervigen.com/spurious-correlations}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Causal Effect}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Causal Effect given access to a Time Machine}
+
+How we would measure causal effect if we had a time machine:
+
+\vspace{1cm}
+
+
+\begin{tabular}{c|ccc}
+subject & $Y(1)$ & $Y(0)$ & $Y(1) - Y(0)$ \\\hline
+Joe & $-5$ & $5$ & $-10$ \\
+Mary & $-10$ & $-5$ & $-5$ \\
+Sally & $0$ & $10$ & $-10$ \\
+Bob & $-20$ & $-5$ & $-15$ \\\hline
+\textbf{Mean} & & & $-10$
+\end{tabular}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Causal Effect since we don't have a time machine}
+
+But we haven't found any time machines yet, so we're usually stuck with this:
+
+\vspace{1cm}
+
+
+\begin{tabular}{c|ccc}
+subject & $Y(1)$ & $Y(0)$ & $Y(1) - Y(0)$ \\\hline
+Joe & ? & $5$ & ? \\
+Mary & $-10$ & ? & ? \\
+Sally & ? & $10$ & ? \\
+Bob & $-20$ & ? & ? \\\hline
+\textbf{Mean} & & & ?
+\end{tabular}
+
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Causal Effect since we don't have a time machine}
+
+What if we look at the average of each group?
+
+\vspace{1cm}
+
+\begin{tabular}{c|ccc}
+subject & $Y(1)$ & $Y(0)$ & $Y(1) - Y(0)$ \\\hline
+Joe & ? & $5$ & ? \\
+Mary & $-10$ & ? & ? \\
+Sally & ? & $10$ & ? \\
+Bob & $-20$ & ? & ? \\\hline
+\textbf{Mean} & $-15$ & $7.5$ & ?
+\end{tabular}
+
+\vspace{1cm}
+
+\textbf{Average treatment effect}: $\bar{Y}(1) - \bar{Y}(0) = -22.5$
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Causal Effect since we don't have a time machine}
+
+\begin{itemize}
+\item In general we cannot observe the causal effect directly.
+\item Estimating causal effects requires:
+	\begin{itemize}
+	\item substitutes for the potential outcome,
+	\item randomization,
+	\item or statistical adjustment.
+	\end{itemize}
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Counterfactual Substitutes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{Substitues to Potential Outcome}
+Examples:
+\begin{itemize}
+\item Maybe you can repeat treatment, e.g. drinking tea before bed.
+\item Dividing up a piece of plastic and exposing it to a corrosive chemical.
+\item The effect of a diet over time by measuring weight.
+\end{itemize}
+
+\vspace{1cm}
+These tend to carry strong assumptions that may be implicit in the choice of substitution.
+
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Randomized Controlled Trials}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{The Gold Standard: The Randomized Controlled Trial}
+\begin{itemize}
+\item We cannot compare treatment and control on the same units, so we compare similar units.
+\item Selection bias is avoided through randomization.
+\item Well-proven methodology and typically one of the best ways to design a study. 
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{The Gold Standard: The Randomized Controlled Trial}
+Problems:
+\begin{itemize}
+\item It's not always possible to conduct an experiment. 
+\item It could be cost prohibitive.
+\item Participants could self-select into the treatment group, e.g. company wellness programs.
+\item You may not be involved in the study design, and only receive data post-hoc.
+\item It might be unethical to control treatment.
+\end{itemize}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Statistical Adjustment}
+\frame {\frametitle{Statistical Adjustment}
+
+\begin{itemize}
+\item Usually attempts to approximate what a random experiment can achieve. 
+\item Attempts to create similar units.
+\item Regression estimate of the outcome.
+\item Matching to achieve balance.
+\end{itemize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Rubin Causal Model}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame {\frametitle{The Rubin Causal Model}
+
+For the moment let's assume randomization and revisit our example:
+\vspace{0.5cm}
+
+\begin{tabular}{c|ccc}
+subject & $Y(1)$ & $Y(0)$ & $Y(1) - Y(0)$ \\\hline
+Joe & ? & $5$ & ? \\
+Mary & $-10$ & ? & ? \\
+Sally & ? & $10$ & ? \\
+Bob & $-20$ & ? & ? \\\hline
+\textbf{Mean} & ? & ? & ?
+\end{tabular}
+\vspace{0.5cm}
+
+What if we can estimate the unknown values which we can't observe in practice?
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The Rubin Causal Model}
+
+Building a linear model on treatment alone,
+$$
+\hat{Y}_i = \alpha + \tau D_i + \epsilon_i
+$$
+
+we have the least squares estimator of,
+$$
+(\hat{\tau}, \hat{\alpha}) = \arg\min_{\tau, \alpha} \sum_{i=1}^N (Y - \alpha - \tau D_i)^2
+$$
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The Rubin Causal Model}
+
+Solving for $\hat{\tau}$ we end up with,
+
+$$
+\hat{\tau} = \frac{\sum_{i=1}^N (D_i - \bar{D}) (\hat{Y} - \bar{Y})}{\sum_{i=1}^N (D_i - \bar{D})^2}
+$$
+
+This can be shown to be equal to,
+$$
+\hat{\tau} = \bar{Y}(1) - \bar{Y}(0)
+$$
+
+That is our estimator $\tau$ is identical to the difference in average outcomes of treatment status.
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{The Rubin Causal Model}
+In general we can estimate our treatment effect with regression
+
+\begin{itemize}
+\item Controlling for covariates:
+\vspace{0.3cm}\\
+$\hat{Y}_i = \alpha + \tau D_i + \beta X_i + \epsilon_i$
+\vspace{0.3cm}
+\item Interaction with the treatment:
+\vspace{0.3cm}\\
+$\hat{Y}_i = \alpha + \tau D_i + \beta X_i + \gamma D_i (X_i - \bar{X}) + \epsilon_i$
+\vspace{0.3cm}
+\end{itemize}
+
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Causal Inference Assumptions}
+
+What are we assuming here?
+
+Treatment is \textit{Strongly Ignorable}: 
+
+\begin{itemize}
+\item Unconfoundedness: $D$ is independent of $(Y(0), Y(1))$ conditional on $X=x$, e.g. the treatment of one group does not affect the other group.
+\item Overlap: $c < \mathbb{P}(D=1 | X=x) < 1 - c$, for $c > 0$. 
+\end{itemize}
+
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Matching}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Matching}
+
+\begin{itemize}
+\item Matching tries to avoid and remove selection bias from datasets.
+\item The goal is to approximate a randomized or controlled trial.
+\item There are various ways to do this, the most commonly seen is propensity matching.
+\item Can also be good for unbalanced groups in any trial, where the size of one group is significantly smaller than another (Maybe an observational study).
+\end{itemize}
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Propensity Score Matching}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frame{\frametitle{Propensity Score Matching}
+
+A propensity score is an approximate model of how likely a subject is to have been in the treatment group. 
+
+$$P(D_i = 1 | X_i)$$
+
+Solve this using a regression,
+
+$$D_i = \text{logistic}(\alpha + \beta X_i + \epsilon_i)$$
+
+We can then select the control group from the non-treatment population by matching members based on minimizing the difference in this score, e.g. pairing.
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Distance Matching}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frame{\frametitle{Distance Matching}
+
+Additionally we could minimize the distance between covariates,
+
+$$
+m(i) = \arg \min_{j:W_j \ne W_i} || X_j - X_i ||
+$$
+
+Where we define $||X_j - X_i||$ as a distance between the covariate vectors $X_j$ and $X_i$ as follows:
+
+$$
+||X_j - X_i|| := (X_j - X_i)^\prime W (X_j - X_i).
+$$
+
+where $W$ is defined as
+
+$$
+W = \text{diag} \{ \hat{\sigma}^{-2}_1 , \dots, \hat{\sigma}^{-2}_K \}
+$$
+
+also known as Mahalanobis distance.
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Examples}
+
+\frame{\frametitle{Examples}
+Let's try some of this out.
+}
+
+
+\end{document}

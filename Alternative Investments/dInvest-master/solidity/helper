@@ -1,0 +1,35 @@
+var accounts = web3.eth.accounts
+var hc = HedgeContract1.deployed()
+
+hc.setInvestAgent(accounts[0])
+hc.setBuyAgent(accounts[0])
+
+hc.createInvestment.sendTransaction([1,2,3], {value: web3.toWei(1.1, "ether"), gas: 900000, from: accounts[1]})
+
+hc.investOffer.sendTransaction(web3.toWei(1.1, "ether"), [4,5,6], {gas: 3141592, from: accounts[0]})
+hc.withdrawBuyAgent.sendTransaction({ gas: 3141592, from:accounts[0]})
+hc.sendBuyAgent.sendTransaction(15, 1, 2, 3, { value: web3.toWei(5, "ether"), gas: 3141592, from:accounts[0]})
+
+hc.investments(0)
+hc.blackListCompanies()
+
+hc.investOffer(1500000000000000000, "abc,def")
+
+
+hc.sendBuyAgent.sendTransaction(1, 1, 1, 1, {value: web3.toWei(1.3, "ether"), gas: 200000})
+
+var filter = web3.eth.filter({fromBlock:1, toBlock: 'latest'});
+filter.watch(function(error, result) { if(!error) {console.log(result);}});
+
+loadScript('')
+
+hedge.setBuyAgent('0xdf43637B00D688C57BC4751948fF36E255a301D8')
+hedge.setInvestAgent('0x221fAA8A80965a8f0CD8C097B14a0D41EaB85922')
+
+hedge.createInvestment.sendTransaction([4,5,6], {value: web3.toWei(2, "ether"), gas: 3141592 })
+
+hedge.investOffer.sendTransaction(web3.toWei(6, "ether"), [4,1,2], {gas: 3141592})
+hedge.withdrawBuyAgent.sendTransaction({ gas: 3141592})
+hedge.sendBuyAgent.sendTransaction(15, 1, 2, 3, { value: web3.toWei(9, "ether"), gas: 3141592})
+
+hedge.withdrawalUser.sendTransaction({ gas: 3141592})

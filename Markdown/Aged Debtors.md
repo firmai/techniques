@@ -1,0 +1,3239 @@
+
+
+```python
+import pandas as pd
+import plotly.graph_objs as go
+from plotly.offline import init_notebook_mode, iplot
+
+init_notebook_mode(connected=True)
+```
+
+
+<script>requirejs.config({paths: { 'plotly': ['https://cdn.plot.ly/plotly-latest.min']},});if(!window.Plotly) {{require(['plotly'],function(plotly) {window.Plotly=plotly;});}}</script>
+
+
+
+```python
+pnl = pd.read_excel('data/pnl.xlsx')
+
+pnl
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>month</th>
+      <th>revenue</th>
+      <th>cogs</th>
+      <th>opex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2017-01-01</td>
+      <td>1416.45</td>
+      <td>456.71</td>
+      <td>253.93</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017-02-01</td>
+      <td>1143.79</td>
+      <td>368.74</td>
+      <td>212.61</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2017-03-01</td>
+      <td>1170.74</td>
+      <td>401.54</td>
+      <td>409.30</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2017-04-01</td>
+      <td>1295.67</td>
+      <td>433.87</td>
+      <td>125.72</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2017-05-01</td>
+      <td>1365.70</td>
+      <td>433.21</td>
+      <td>469.99</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2017-06-01</td>
+      <td>1783.54</td>
+      <td>539.93</td>
+      <td>643.53</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2017-07-01</td>
+      <td>753.44</td>
+      <td>233.71</td>
+      <td>184.28</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2017-08-01</td>
+      <td>1164.51</td>
+      <td>376.59</td>
+      <td>395.08</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2017-09-01</td>
+      <td>3684.36</td>
+      <td>1168.46</td>
+      <td>1426.04</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2017-10-01</td>
+      <td>3900.38</td>
+      <td>1008.98</td>
+      <td>1269.18</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2017-11-01</td>
+      <td>9767.07</td>
+      <td>3133.63</td>
+      <td>5052.31</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2017-12-01</td>
+      <td>15303.12</td>
+      <td>4914.47</td>
+      <td>4681.09</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+pnl['expenses'] = pnl['cogs'] + pnl['opex']
+pnl['net_profit'] = pnl['revenue'] - pnl['expenses']
+```
+
+
+```python
+data = [
+    go.Bar(
+        x=pnl['month'], 
+        y=pnl['revenue'], 
+        name='Revenue',
+        marker={'color': '#3FC1C9'}
+    ),    
+    go.Bar(
+        x=pnl['month'], 
+        y=pnl['expenses'], 
+        name='Expenses',
+        marker={'color': '#95E1D3'}    
+    ),
+    go.Scatter(
+        x=pnl['month'], 
+        y=pnl['net_profit'],
+        name='Net Profit',        
+        marker={'color': '#393E46'}    
+    )
+]
+
+layout = go.Layout(
+    title='Profit and Loss - 2017', 
+    xaxis={'title': 'Month'}, 
+    yaxis={'title': 'Amount (£)'}
+)
+
+fig = go.Figure(data=data, layout=layout)
+
+iplot(fig)
+```
+
+
+<div id="24d62b18-2cf5-4bbd-ae6f-f1a28ed85f56" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("24d62b18-2cf5-4bbd-ae6f-f1a28ed85f56", [{"type": "bar", "x": ["2017-01-01", "2017-02-01", "2017-03-01", "2017-04-01", "2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01"], "y": [1416.45, 1143.79, 1170.74, 1295.67, 1365.7, 1783.54, 753.44, 1164.51, 3684.36, 3900.38, 9767.07, 15303.12], "name": "Revenue", "marker": {"color": "#3FC1C9"}}, {"type": "bar", "x": ["2017-01-01", "2017-02-01", "2017-03-01", "2017-04-01", "2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01"], "y": [710.64, 581.35, 810.84, 559.59, 903.2, 1183.46, 417.99, 771.67, 2594.5, 2278.16, 8185.9400000000005, 9595.560000000001], "name": "Expenses", "marker": {"color": "#95E1D3"}}, {"type": "scatter", "x": ["2017-01-01", "2017-02-01", "2017-03-01", "2017-04-01", "2017-05-01", "2017-06-01", "2017-07-01", "2017-08-01", "2017-09-01", "2017-10-01", "2017-11-01", "2017-12-01"], "y": [705.8100000000001, 562.4399999999999, 359.9, 736.08, 462.5, 600.0799999999999, 335.45000000000005, 392.84000000000003, 1089.8600000000001, 1622.2200000000003, 1581.1299999999992, 5707.5599999999995], "name": "Net Profit", "marker": {"color": "#393E46"}}], {"title": "Profit and Loss - 2017", "xaxis": {"title": "Month"}, "yaxis": {"title": "Amount (\u00a3)"}}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+
+
+
+```python
+date_columns = ['issue_date', 'due_date', 'paid_date']
+
+ar = pd.read_csv('data/debtors.csv', parse_dates=date_columns)
+
+ar
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>invoice_ref</th>
+      <th>issue_date</th>
+      <th>due_date</th>
+      <th>paid_date</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Marsoftwares</td>
+      <td>INV-001</td>
+      <td>2017-01-01</td>
+      <td>2017-02-05</td>
+      <td>2017-03-15</td>
+      <td>0</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Moonlimited</td>
+      <td>INV-002</td>
+      <td>2017-01-04</td>
+      <td>2017-02-08</td>
+      <td>2017-02-13</td>
+      <td>0</td>
+      <td>1700</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cubrews</td>
+      <td>INV-003</td>
+      <td>2017-01-13</td>
+      <td>2017-02-17</td>
+      <td>2017-03-21</td>
+      <td>0</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Honeydustries</td>
+      <td>INV-004</td>
+      <td>2017-01-14</td>
+      <td>2017-02-18</td>
+      <td>2017-03-01</td>
+      <td>0</td>
+      <td>4700</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ironmobile</td>
+      <td>INV-005</td>
+      <td>2017-01-18</td>
+      <td>2017-02-22</td>
+      <td>2017-02-25</td>
+      <td>0</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Happypaw</td>
+      <td>INV-006</td>
+      <td>2017-01-27</td>
+      <td>2017-03-03</td>
+      <td>2017-03-18</td>
+      <td>0</td>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Marsoftwares</td>
+      <td>INV-007</td>
+      <td>2017-01-30</td>
+      <td>2017-03-06</td>
+      <td>2017-03-31</td>
+      <td>0</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dreamedia</td>
+      <td>INV-008</td>
+      <td>2017-01-31</td>
+      <td>2017-03-07</td>
+      <td>2017-05-06</td>
+      <td>0</td>
+      <td>3800</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Ridgeco</td>
+      <td>INV-009</td>
+      <td>2017-02-08</td>
+      <td>2017-03-15</td>
+      <td>2017-06-09</td>
+      <td>0</td>
+      <td>2500</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Cubrews</td>
+      <td>INV-010</td>
+      <td>2017-02-11</td>
+      <td>2017-03-18</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Honeydustries</td>
+      <td>INV-011</td>
+      <td>2017-02-21</td>
+      <td>2017-03-28</td>
+      <td>2017-04-09</td>
+      <td>0</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Arcanetime</td>
+      <td>INV-012</td>
+      <td>2017-02-22</td>
+      <td>2017-03-29</td>
+      <td>2017-04-04</td>
+      <td>0</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Zeuslife</td>
+      <td>INV-013</td>
+      <td>2017-02-27</td>
+      <td>2017-04-03</td>
+      <td>2017-04-11</td>
+      <td>0</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Wavecast</td>
+      <td>INV-014</td>
+      <td>2017-03-07</td>
+      <td>2017-04-11</td>
+      <td>2017-04-28</td>
+      <td>0</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Moonlimited</td>
+      <td>INV-015</td>
+      <td>2017-03-15</td>
+      <td>2017-04-19</td>
+      <td>2017-04-23</td>
+      <td>0</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Betagate</td>
+      <td>INV-016</td>
+      <td>2017-03-18</td>
+      <td>2017-04-22</td>
+      <td>2017-04-30</td>
+      <td>0</td>
+      <td>2200</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Happypaw</td>
+      <td>INV-017</td>
+      <td>2017-03-28</td>
+      <td>2017-05-02</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Wavecast</td>
+      <td>INV-018</td>
+      <td>2017-03-31</td>
+      <td>2017-05-05</td>
+      <td>2017-05-24</td>
+      <td>0</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Moonlimited</td>
+      <td>INV-019</td>
+      <td>2017-04-04</td>
+      <td>2017-05-09</td>
+      <td>2017-05-10</td>
+      <td>0</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Zeuslife</td>
+      <td>INV-020</td>
+      <td>2017-04-12</td>
+      <td>2017-05-17</td>
+      <td>2017-05-31</td>
+      <td>0</td>
+      <td>4200</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Ridgeco</td>
+      <td>INV-021</td>
+      <td>2017-04-21</td>
+      <td>2017-05-26</td>
+      <td>2017-07-30</td>
+      <td>0</td>
+      <td>5600</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Betagate</td>
+      <td>INV-022</td>
+      <td>2017-04-22</td>
+      <td>2017-05-27</td>
+      <td>2017-06-05</td>
+      <td>0</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Marsoftwares</td>
+      <td>INV-023</td>
+      <td>2017-04-25</td>
+      <td>2017-05-30</td>
+      <td>2017-06-20</td>
+      <td>0</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Honeydustries</td>
+      <td>INV-024</td>
+      <td>2017-04-29</td>
+      <td>2017-06-03</td>
+      <td>2017-06-13</td>
+      <td>0</td>
+      <td>5700</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Ironmobile</td>
+      <td>INV-025</td>
+      <td>2017-04-30</td>
+      <td>2017-06-04</td>
+      <td>2017-06-07</td>
+      <td>0</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Ridgeco</td>
+      <td>INV-026</td>
+      <td>2017-05-05</td>
+      <td>2017-06-09</td>
+      <td>2017-08-30</td>
+      <td>0</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Moonlimited</td>
+      <td>INV-027</td>
+      <td>2017-05-07</td>
+      <td>2017-06-11</td>
+      <td>2017-06-14</td>
+      <td>0</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Dreamedia</td>
+      <td>INV-028</td>
+      <td>2017-05-17</td>
+      <td>2017-06-21</td>
+      <td>2017-08-20</td>
+      <td>0</td>
+      <td>2400</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Happypaw</td>
+      <td>INV-029</td>
+      <td>2017-05-24</td>
+      <td>2017-06-28</td>
+      <td>2017-07-17</td>
+      <td>0</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Moonlimited</td>
+      <td>INV-030</td>
+      <td>2017-05-26</td>
+      <td>2017-06-30</td>
+      <td>2017-07-02</td>
+      <td>0</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Ironmobile</td>
+      <td>INV-046</td>
+      <td>2017-08-14</td>
+      <td>2017-09-18</td>
+      <td>2017-09-20</td>
+      <td>0</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Honeydustries</td>
+      <td>INV-047</td>
+      <td>2017-08-21</td>
+      <td>2017-09-25</td>
+      <td>2017-10-08</td>
+      <td>0</td>
+      <td>4300</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Dreamedia</td>
+      <td>INV-048</td>
+      <td>2017-08-24</td>
+      <td>2017-09-28</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Cubrews</td>
+      <td>INV-049</td>
+      <td>2017-08-31</td>
+      <td>2017-10-05</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Moonlimited</td>
+      <td>INV-050</td>
+      <td>2017-09-05</td>
+      <td>2017-10-10</td>
+      <td>2017-10-15</td>
+      <td>0</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Happypaw</td>
+      <td>INV-051</td>
+      <td>2017-09-13</td>
+      <td>2017-10-18</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Zeuslife</td>
+      <td>INV-052</td>
+      <td>2017-09-22</td>
+      <td>2017-10-27</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Betagate</td>
+      <td>INV-053</td>
+      <td>2017-10-02</td>
+      <td>2017-11-06</td>
+      <td>2017-11-14</td>
+      <td>0</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Marsoftwares</td>
+      <td>INV-054</td>
+      <td>2017-10-09</td>
+      <td>2017-11-13</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Ironmobile</td>
+      <td>INV-055</td>
+      <td>2017-10-12</td>
+      <td>2017-11-16</td>
+      <td>2017-11-16</td>
+      <td>0</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Ridgeco</td>
+      <td>INV-056</td>
+      <td>2017-10-13</td>
+      <td>2017-11-17</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Wavecast</td>
+      <td>INV-057</td>
+      <td>2017-10-16</td>
+      <td>2017-11-20</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Cubrews</td>
+      <td>INV-058</td>
+      <td>2017-10-26</td>
+      <td>2017-11-30</td>
+      <td>2018-01-13</td>
+      <td>0</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Arcanetime</td>
+      <td>INV-059</td>
+      <td>2017-10-27</td>
+      <td>2017-12-01</td>
+      <td>2017-12-06</td>
+      <td>0</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Marsoftwares</td>
+      <td>INV-060</td>
+      <td>2017-10-30</td>
+      <td>2017-12-04</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Honeydustries</td>
+      <td>INV-061</td>
+      <td>2017-10-31</td>
+      <td>2017-12-05</td>
+      <td>2017-12-15</td>
+      <td>0</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Happypaw</td>
+      <td>INV-062</td>
+      <td>2017-11-05</td>
+      <td>2017-12-10</td>
+      <td>2017-12-26</td>
+      <td>0</td>
+      <td>5800</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Betagate</td>
+      <td>INV-063</td>
+      <td>2017-11-15</td>
+      <td>2017-12-20</td>
+      <td>2017-12-29</td>
+      <td>0</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Moonlimited</td>
+      <td>INV-064</td>
+      <td>2017-11-19</td>
+      <td>2017-12-24</td>
+      <td>2017-12-28</td>
+      <td>0</td>
+      <td>3200</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Cubrews</td>
+      <td>INV-065</td>
+      <td>2017-11-21</td>
+      <td>2017-12-26</td>
+      <td>NaT</td>
+      <td>4800</td>
+      <td>4800</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Honeydustries</td>
+      <td>INV-066</td>
+      <td>2017-11-29</td>
+      <td>2018-01-03</td>
+      <td>NaT</td>
+      <td>5500</td>
+      <td>5500</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Cubrews</td>
+      <td>INV-067</td>
+      <td>2017-12-06</td>
+      <td>2018-01-10</td>
+      <td>NaT</td>
+      <td>2000</td>
+      <td>5600</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Ridgeco</td>
+      <td>INV-068</td>
+      <td>2017-12-14</td>
+      <td>2018-01-18</td>
+      <td>NaT</td>
+      <td>4500</td>
+      <td>4500</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Marsoftwares</td>
+      <td>INV-069</td>
+      <td>2017-12-21</td>
+      <td>2018-01-25</td>
+      <td>NaT</td>
+      <td>4600</td>
+      <td>4600</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Dreamedia</td>
+      <td>INV-070</td>
+      <td>2017-12-23</td>
+      <td>2018-01-27</td>
+      <td>NaT</td>
+      <td>4000</td>
+      <td>5500</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Arcanetime</td>
+      <td>INV-071</td>
+      <td>2017-12-28</td>
+      <td>2018-02-01</td>
+      <td>NaT</td>
+      <td>5300</td>
+      <td>5300</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Zeuslife</td>
+      <td>INV-072</td>
+      <td>2017-12-31</td>
+      <td>2018-02-04</td>
+      <td>NaT</td>
+      <td>3700</td>
+      <td>3700</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Wavecast</td>
+      <td>INV-073</td>
+      <td>2018-01-05</td>
+      <td>2018-02-09</td>
+      <td>NaT</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Honeydustries</td>
+      <td>INV-074</td>
+      <td>2018-01-08</td>
+      <td>2018-02-12</td>
+      <td>NaT</td>
+      <td>3400</td>
+      <td>3400</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Happypaw</td>
+      <td>INV-075</td>
+      <td>2018-01-15</td>
+      <td>2018-02-19</td>
+      <td>NaT</td>
+      <td>1800</td>
+      <td>1800</td>
+    </tr>
+  </tbody>
+</table>
+<p>75 rows × 7 columns</p>
+</div>
+
+
+
+
+```python
+totals = ar.groupby(['customer'], as_index=False).sum()
+
+totals
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arcanetime</td>
+      <td>5300</td>
+      <td>12400</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Betagate</td>
+      <td>0</td>
+      <td>14600</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cubrews</td>
+      <td>6800</td>
+      <td>23900</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Dreamedia</td>
+      <td>4000</td>
+      <td>16100</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Happypaw</td>
+      <td>1800</td>
+      <td>20700</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Honeydustries</td>
+      <td>8900</td>
+      <td>31600</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Ironmobile</td>
+      <td>0</td>
+      <td>8900</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Marsoftwares</td>
+      <td>4600</td>
+      <td>26800</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Moonlimited</td>
+      <td>0</td>
+      <td>19400</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Ridgeco</td>
+      <td>4500</td>
+      <td>18800</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Wavecast</td>
+      <td>5400</td>
+      <td>14000</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Zeuslife</td>
+      <td>3700</td>
+      <td>15700</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+data = [
+    go.Pie(
+        labels=totals['customer'], 
+        values=totals['total_amount'],
+        hoverinfo='label+percent', 
+        textinfo='value',
+        hole=0.4
+    )
+]
+
+iplot(data)
+```
+
+
+<div id="dfbefe61-2d89-43db-af25-02c9b6c3f163" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("dfbefe61-2d89-43db-af25-02c9b6c3f163", [{"type": "pie", "labels": ["Arcanetime", "Betagate", "Cubrews", "Dreamedia", "Happypaw", "Honeydustries", "Ironmobile", "Marsoftwares", "Moonlimited", "Ridgeco", "Wavecast", "Zeuslife"], "values": [12400, 14600, 23900, 16100, 20700, 31600, 8900, 26800, 19400, 18800, 14000, 15700], "hoverinfo": "label+percent", "textinfo": "value", "hole": 0.4}], {}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+
+
+# Part 4
+
+
+```python
+ar['paid_amount'] = ar['total_amount'] - ar['amount_due']
+
+ar
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>invoice_ref</th>
+      <th>issue_date</th>
+      <th>due_date</th>
+      <th>paid_date</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+      <th>paid_amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Marsoftwares</td>
+      <td>INV-001</td>
+      <td>2017-01-01</td>
+      <td>2017-02-05</td>
+      <td>2017-03-15</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Moonlimited</td>
+      <td>INV-002</td>
+      <td>2017-01-04</td>
+      <td>2017-02-08</td>
+      <td>2017-02-13</td>
+      <td>0</td>
+      <td>1700</td>
+      <td>1700</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cubrews</td>
+      <td>INV-003</td>
+      <td>2017-01-13</td>
+      <td>2017-02-17</td>
+      <td>2017-03-21</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Honeydustries</td>
+      <td>INV-004</td>
+      <td>2017-01-14</td>
+      <td>2017-02-18</td>
+      <td>2017-03-01</td>
+      <td>0</td>
+      <td>4700</td>
+      <td>4700</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ironmobile</td>
+      <td>INV-005</td>
+      <td>2017-01-18</td>
+      <td>2017-02-22</td>
+      <td>2017-02-25</td>
+      <td>0</td>
+      <td>200</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Happypaw</td>
+      <td>INV-006</td>
+      <td>2017-01-27</td>
+      <td>2017-03-03</td>
+      <td>2017-03-18</td>
+      <td>0</td>
+      <td>5200</td>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Marsoftwares</td>
+      <td>INV-007</td>
+      <td>2017-01-30</td>
+      <td>2017-03-06</td>
+      <td>2017-03-31</td>
+      <td>0</td>
+      <td>800</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dreamedia</td>
+      <td>INV-008</td>
+      <td>2017-01-31</td>
+      <td>2017-03-07</td>
+      <td>2017-05-06</td>
+      <td>0</td>
+      <td>3800</td>
+      <td>3800</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Ridgeco</td>
+      <td>INV-009</td>
+      <td>2017-02-08</td>
+      <td>2017-03-15</td>
+      <td>2017-06-09</td>
+      <td>0</td>
+      <td>2500</td>
+      <td>2500</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Cubrews</td>
+      <td>INV-010</td>
+      <td>2017-02-11</td>
+      <td>2017-03-18</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>5200</td>
+      <td>5200</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Honeydustries</td>
+      <td>INV-011</td>
+      <td>2017-02-21</td>
+      <td>2017-03-28</td>
+      <td>2017-04-09</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Arcanetime</td>
+      <td>INV-012</td>
+      <td>2017-02-22</td>
+      <td>2017-03-29</td>
+      <td>2017-04-04</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Zeuslife</td>
+      <td>INV-013</td>
+      <td>2017-02-27</td>
+      <td>2017-04-03</td>
+      <td>2017-04-11</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Wavecast</td>
+      <td>INV-014</td>
+      <td>2017-03-07</td>
+      <td>2017-04-11</td>
+      <td>2017-04-28</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Moonlimited</td>
+      <td>INV-015</td>
+      <td>2017-03-15</td>
+      <td>2017-04-19</td>
+      <td>2017-04-23</td>
+      <td>0</td>
+      <td>400</td>
+      <td>400</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Betagate</td>
+      <td>INV-016</td>
+      <td>2017-03-18</td>
+      <td>2017-04-22</td>
+      <td>2017-04-30</td>
+      <td>0</td>
+      <td>2200</td>
+      <td>2200</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Happypaw</td>
+      <td>INV-017</td>
+      <td>2017-03-28</td>
+      <td>2017-05-02</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>3300</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Wavecast</td>
+      <td>INV-018</td>
+      <td>2017-03-31</td>
+      <td>2017-05-05</td>
+      <td>2017-05-24</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Moonlimited</td>
+      <td>INV-019</td>
+      <td>2017-04-04</td>
+      <td>2017-05-09</td>
+      <td>2017-05-10</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Zeuslife</td>
+      <td>INV-020</td>
+      <td>2017-04-12</td>
+      <td>2017-05-17</td>
+      <td>2017-05-31</td>
+      <td>0</td>
+      <td>4200</td>
+      <td>4200</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Ridgeco</td>
+      <td>INV-021</td>
+      <td>2017-04-21</td>
+      <td>2017-05-26</td>
+      <td>2017-07-30</td>
+      <td>0</td>
+      <td>5600</td>
+      <td>5600</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Betagate</td>
+      <td>INV-022</td>
+      <td>2017-04-22</td>
+      <td>2017-05-27</td>
+      <td>2017-06-05</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Marsoftwares</td>
+      <td>INV-023</td>
+      <td>2017-04-25</td>
+      <td>2017-05-30</td>
+      <td>2017-06-20</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Honeydustries</td>
+      <td>INV-024</td>
+      <td>2017-04-29</td>
+      <td>2017-06-03</td>
+      <td>2017-06-13</td>
+      <td>0</td>
+      <td>5700</td>
+      <td>5700</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Ironmobile</td>
+      <td>INV-025</td>
+      <td>2017-04-30</td>
+      <td>2017-06-04</td>
+      <td>2017-06-07</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Ridgeco</td>
+      <td>INV-026</td>
+      <td>2017-05-05</td>
+      <td>2017-06-09</td>
+      <td>2017-08-30</td>
+      <td>0</td>
+      <td>2700</td>
+      <td>2700</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Moonlimited</td>
+      <td>INV-027</td>
+      <td>2017-05-07</td>
+      <td>2017-06-11</td>
+      <td>2017-06-14</td>
+      <td>0</td>
+      <td>2800</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Dreamedia</td>
+      <td>INV-028</td>
+      <td>2017-05-17</td>
+      <td>2017-06-21</td>
+      <td>2017-08-20</td>
+      <td>0</td>
+      <td>2400</td>
+      <td>2400</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Happypaw</td>
+      <td>INV-029</td>
+      <td>2017-05-24</td>
+      <td>2017-06-28</td>
+      <td>2017-07-17</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Moonlimited</td>
+      <td>INV-030</td>
+      <td>2017-05-26</td>
+      <td>2017-06-30</td>
+      <td>2017-07-02</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Ironmobile</td>
+      <td>INV-046</td>
+      <td>2017-08-14</td>
+      <td>2017-09-18</td>
+      <td>2017-09-20</td>
+      <td>0</td>
+      <td>500</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Honeydustries</td>
+      <td>INV-047</td>
+      <td>2017-08-21</td>
+      <td>2017-09-25</td>
+      <td>2017-10-08</td>
+      <td>0</td>
+      <td>4300</td>
+      <td>4300</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Dreamedia</td>
+      <td>INV-048</td>
+      <td>2017-08-24</td>
+      <td>2017-09-28</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Cubrews</td>
+      <td>INV-049</td>
+      <td>2017-08-31</td>
+      <td>2017-10-05</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>700</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Moonlimited</td>
+      <td>INV-050</td>
+      <td>2017-09-05</td>
+      <td>2017-10-10</td>
+      <td>2017-10-15</td>
+      <td>0</td>
+      <td>3300</td>
+      <td>3300</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Happypaw</td>
+      <td>INV-051</td>
+      <td>2017-09-13</td>
+      <td>2017-10-18</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Zeuslife</td>
+      <td>INV-052</td>
+      <td>2017-09-22</td>
+      <td>2017-10-27</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Betagate</td>
+      <td>INV-053</td>
+      <td>2017-10-02</td>
+      <td>2017-11-06</td>
+      <td>2017-11-14</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Marsoftwares</td>
+      <td>INV-054</td>
+      <td>2017-10-09</td>
+      <td>2017-11-13</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>2800</td>
+      <td>2800</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Ironmobile</td>
+      <td>INV-055</td>
+      <td>2017-10-12</td>
+      <td>2017-11-16</td>
+      <td>2017-11-16</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Ridgeco</td>
+      <td>INV-056</td>
+      <td>2017-10-13</td>
+      <td>2017-11-17</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>800</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Wavecast</td>
+      <td>INV-057</td>
+      <td>2017-10-16</td>
+      <td>2017-11-20</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Cubrews</td>
+      <td>INV-058</td>
+      <td>2017-10-26</td>
+      <td>2017-11-30</td>
+      <td>2018-01-13</td>
+      <td>0</td>
+      <td>700</td>
+      <td>700</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Arcanetime</td>
+      <td>INV-059</td>
+      <td>2017-10-27</td>
+      <td>2017-12-01</td>
+      <td>2017-12-06</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Marsoftwares</td>
+      <td>INV-060</td>
+      <td>2017-10-30</td>
+      <td>2017-12-04</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Honeydustries</td>
+      <td>INV-061</td>
+      <td>2017-10-31</td>
+      <td>2017-12-05</td>
+      <td>2017-12-15</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Happypaw</td>
+      <td>INV-062</td>
+      <td>2017-11-05</td>
+      <td>2017-12-10</td>
+      <td>2017-12-26</td>
+      <td>0</td>
+      <td>5800</td>
+      <td>5800</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Betagate</td>
+      <td>INV-063</td>
+      <td>2017-11-15</td>
+      <td>2017-12-20</td>
+      <td>2017-12-29</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Moonlimited</td>
+      <td>INV-064</td>
+      <td>2017-11-19</td>
+      <td>2017-12-24</td>
+      <td>2017-12-28</td>
+      <td>0</td>
+      <td>3200</td>
+      <td>3200</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Cubrews</td>
+      <td>INV-065</td>
+      <td>2017-11-21</td>
+      <td>2017-12-26</td>
+      <td>NaT</td>
+      <td>4800</td>
+      <td>4800</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Honeydustries</td>
+      <td>INV-066</td>
+      <td>2017-11-29</td>
+      <td>2018-01-03</td>
+      <td>NaT</td>
+      <td>5500</td>
+      <td>5500</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Cubrews</td>
+      <td>INV-067</td>
+      <td>2017-12-06</td>
+      <td>2018-01-10</td>
+      <td>NaT</td>
+      <td>2000</td>
+      <td>5600</td>
+      <td>3600</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Ridgeco</td>
+      <td>INV-068</td>
+      <td>2017-12-14</td>
+      <td>2018-01-18</td>
+      <td>NaT</td>
+      <td>4500</td>
+      <td>4500</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Marsoftwares</td>
+      <td>INV-069</td>
+      <td>2017-12-21</td>
+      <td>2018-01-25</td>
+      <td>NaT</td>
+      <td>4600</td>
+      <td>4600</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Dreamedia</td>
+      <td>INV-070</td>
+      <td>2017-12-23</td>
+      <td>2018-01-27</td>
+      <td>NaT</td>
+      <td>4000</td>
+      <td>5500</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Arcanetime</td>
+      <td>INV-071</td>
+      <td>2017-12-28</td>
+      <td>2018-02-01</td>
+      <td>NaT</td>
+      <td>5300</td>
+      <td>5300</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Zeuslife</td>
+      <td>INV-072</td>
+      <td>2017-12-31</td>
+      <td>2018-02-04</td>
+      <td>NaT</td>
+      <td>3700</td>
+      <td>3700</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Wavecast</td>
+      <td>INV-073</td>
+      <td>2018-01-05</td>
+      <td>2018-02-09</td>
+      <td>NaT</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Honeydustries</td>
+      <td>INV-074</td>
+      <td>2018-01-08</td>
+      <td>2018-02-12</td>
+      <td>NaT</td>
+      <td>3400</td>
+      <td>3400</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Happypaw</td>
+      <td>INV-075</td>
+      <td>2018-01-15</td>
+      <td>2018-02-19</td>
+      <td>NaT</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+<p>75 rows × 8 columns</p>
+</div>
+
+
+
+
+```python
+ar['due_month'] = ar['due_date'].map(lambda x: x.strftime('%Y-%m'))
+
+ar
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>invoice_ref</th>
+      <th>issue_date</th>
+      <th>due_date</th>
+      <th>paid_date</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+      <th>paid_amount</th>
+      <th>due_month</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Marsoftwares</td>
+      <td>INV-001</td>
+      <td>2017-01-01</td>
+      <td>2017-02-05</td>
+      <td>2017-03-15</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+      <td>2017-02</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Moonlimited</td>
+      <td>INV-002</td>
+      <td>2017-01-04</td>
+      <td>2017-02-08</td>
+      <td>2017-02-13</td>
+      <td>0</td>
+      <td>1700</td>
+      <td>1700</td>
+      <td>2017-02</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Cubrews</td>
+      <td>INV-003</td>
+      <td>2017-01-13</td>
+      <td>2017-02-17</td>
+      <td>2017-03-21</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+      <td>2017-02</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Honeydustries</td>
+      <td>INV-004</td>
+      <td>2017-01-14</td>
+      <td>2017-02-18</td>
+      <td>2017-03-01</td>
+      <td>0</td>
+      <td>4700</td>
+      <td>4700</td>
+      <td>2017-02</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Ironmobile</td>
+      <td>INV-005</td>
+      <td>2017-01-18</td>
+      <td>2017-02-22</td>
+      <td>2017-02-25</td>
+      <td>0</td>
+      <td>200</td>
+      <td>200</td>
+      <td>2017-02</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Happypaw</td>
+      <td>INV-006</td>
+      <td>2017-01-27</td>
+      <td>2017-03-03</td>
+      <td>2017-03-18</td>
+      <td>0</td>
+      <td>5200</td>
+      <td>5200</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Marsoftwares</td>
+      <td>INV-007</td>
+      <td>2017-01-30</td>
+      <td>2017-03-06</td>
+      <td>2017-03-31</td>
+      <td>0</td>
+      <td>800</td>
+      <td>800</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Dreamedia</td>
+      <td>INV-008</td>
+      <td>2017-01-31</td>
+      <td>2017-03-07</td>
+      <td>2017-05-06</td>
+      <td>0</td>
+      <td>3800</td>
+      <td>3800</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Ridgeco</td>
+      <td>INV-009</td>
+      <td>2017-02-08</td>
+      <td>2017-03-15</td>
+      <td>2017-06-09</td>
+      <td>0</td>
+      <td>2500</td>
+      <td>2500</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Cubrews</td>
+      <td>INV-010</td>
+      <td>2017-02-11</td>
+      <td>2017-03-18</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>5200</td>
+      <td>5200</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Honeydustries</td>
+      <td>INV-011</td>
+      <td>2017-02-21</td>
+      <td>2017-03-28</td>
+      <td>2017-04-09</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Arcanetime</td>
+      <td>INV-012</td>
+      <td>2017-02-22</td>
+      <td>2017-03-29</td>
+      <td>2017-04-04</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+      <td>2017-03</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Zeuslife</td>
+      <td>INV-013</td>
+      <td>2017-02-27</td>
+      <td>2017-04-03</td>
+      <td>2017-04-11</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>2017-04</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Wavecast</td>
+      <td>INV-014</td>
+      <td>2017-03-07</td>
+      <td>2017-04-11</td>
+      <td>2017-04-28</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+      <td>2017-04</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>Moonlimited</td>
+      <td>INV-015</td>
+      <td>2017-03-15</td>
+      <td>2017-04-19</td>
+      <td>2017-04-23</td>
+      <td>0</td>
+      <td>400</td>
+      <td>400</td>
+      <td>2017-04</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>Betagate</td>
+      <td>INV-016</td>
+      <td>2017-03-18</td>
+      <td>2017-04-22</td>
+      <td>2017-04-30</td>
+      <td>0</td>
+      <td>2200</td>
+      <td>2200</td>
+      <td>2017-04</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Happypaw</td>
+      <td>INV-017</td>
+      <td>2017-03-28</td>
+      <td>2017-05-02</td>
+      <td>2017-05-18</td>
+      <td>0</td>
+      <td>3300</td>
+      <td>3300</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>Wavecast</td>
+      <td>INV-018</td>
+      <td>2017-03-31</td>
+      <td>2017-05-05</td>
+      <td>2017-05-24</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>Moonlimited</td>
+      <td>INV-019</td>
+      <td>2017-04-04</td>
+      <td>2017-05-09</td>
+      <td>2017-05-10</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>Zeuslife</td>
+      <td>INV-020</td>
+      <td>2017-04-12</td>
+      <td>2017-05-17</td>
+      <td>2017-05-31</td>
+      <td>0</td>
+      <td>4200</td>
+      <td>4200</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>Ridgeco</td>
+      <td>INV-021</td>
+      <td>2017-04-21</td>
+      <td>2017-05-26</td>
+      <td>2017-07-30</td>
+      <td>0</td>
+      <td>5600</td>
+      <td>5600</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>Betagate</td>
+      <td>INV-022</td>
+      <td>2017-04-22</td>
+      <td>2017-05-27</td>
+      <td>2017-06-05</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Marsoftwares</td>
+      <td>INV-023</td>
+      <td>2017-04-25</td>
+      <td>2017-05-30</td>
+      <td>2017-06-20</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+      <td>2017-05</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>Honeydustries</td>
+      <td>INV-024</td>
+      <td>2017-04-29</td>
+      <td>2017-06-03</td>
+      <td>2017-06-13</td>
+      <td>0</td>
+      <td>5700</td>
+      <td>5700</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>Ironmobile</td>
+      <td>INV-025</td>
+      <td>2017-04-30</td>
+      <td>2017-06-04</td>
+      <td>2017-06-07</td>
+      <td>0</td>
+      <td>3600</td>
+      <td>3600</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>Ridgeco</td>
+      <td>INV-026</td>
+      <td>2017-05-05</td>
+      <td>2017-06-09</td>
+      <td>2017-08-30</td>
+      <td>0</td>
+      <td>2700</td>
+      <td>2700</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>Moonlimited</td>
+      <td>INV-027</td>
+      <td>2017-05-07</td>
+      <td>2017-06-11</td>
+      <td>2017-06-14</td>
+      <td>0</td>
+      <td>2800</td>
+      <td>2800</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>Dreamedia</td>
+      <td>INV-028</td>
+      <td>2017-05-17</td>
+      <td>2017-06-21</td>
+      <td>2017-08-20</td>
+      <td>0</td>
+      <td>2400</td>
+      <td>2400</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>Happypaw</td>
+      <td>INV-029</td>
+      <td>2017-05-24</td>
+      <td>2017-06-28</td>
+      <td>2017-07-17</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Moonlimited</td>
+      <td>INV-030</td>
+      <td>2017-05-26</td>
+      <td>2017-06-30</td>
+      <td>2017-07-02</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+      <td>2017-06</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>Ironmobile</td>
+      <td>INV-046</td>
+      <td>2017-08-14</td>
+      <td>2017-09-18</td>
+      <td>2017-09-20</td>
+      <td>0</td>
+      <td>500</td>
+      <td>500</td>
+      <td>2017-09</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>Honeydustries</td>
+      <td>INV-047</td>
+      <td>2017-08-21</td>
+      <td>2017-09-25</td>
+      <td>2017-10-08</td>
+      <td>0</td>
+      <td>4300</td>
+      <td>4300</td>
+      <td>2017-09</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>Dreamedia</td>
+      <td>INV-048</td>
+      <td>2017-08-24</td>
+      <td>2017-09-28</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+      <td>2017-09</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>Cubrews</td>
+      <td>INV-049</td>
+      <td>2017-08-31</td>
+      <td>2017-10-05</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>700</td>
+      <td>700</td>
+      <td>2017-10</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>Moonlimited</td>
+      <td>INV-050</td>
+      <td>2017-09-05</td>
+      <td>2017-10-10</td>
+      <td>2017-10-15</td>
+      <td>0</td>
+      <td>3300</td>
+      <td>3300</td>
+      <td>2017-10</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>Happypaw</td>
+      <td>INV-051</td>
+      <td>2017-09-13</td>
+      <td>2017-10-18</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1400</td>
+      <td>1400</td>
+      <td>2017-10</td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td>Zeuslife</td>
+      <td>INV-052</td>
+      <td>2017-09-22</td>
+      <td>2017-10-27</td>
+      <td>2017-11-04</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>2017-10</td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td>Betagate</td>
+      <td>INV-053</td>
+      <td>2017-10-02</td>
+      <td>2017-11-06</td>
+      <td>2017-11-14</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td>Marsoftwares</td>
+      <td>INV-054</td>
+      <td>2017-10-09</td>
+      <td>2017-11-13</td>
+      <td>2017-12-22</td>
+      <td>0</td>
+      <td>2800</td>
+      <td>2800</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td>Ironmobile</td>
+      <td>INV-055</td>
+      <td>2017-10-12</td>
+      <td>2017-11-16</td>
+      <td>2017-11-16</td>
+      <td>0</td>
+      <td>4400</td>
+      <td>4400</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td>Ridgeco</td>
+      <td>INV-056</td>
+      <td>2017-10-13</td>
+      <td>2017-11-17</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>800</td>
+      <td>800</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td>Wavecast</td>
+      <td>INV-057</td>
+      <td>2017-10-16</td>
+      <td>2017-11-20</td>
+      <td>2017-12-05</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td>Cubrews</td>
+      <td>INV-058</td>
+      <td>2017-10-26</td>
+      <td>2017-11-30</td>
+      <td>2018-01-13</td>
+      <td>0</td>
+      <td>700</td>
+      <td>700</td>
+      <td>2017-11</td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td>Arcanetime</td>
+      <td>INV-059</td>
+      <td>2017-10-27</td>
+      <td>2017-12-01</td>
+      <td>2017-12-06</td>
+      <td>0</td>
+      <td>1600</td>
+      <td>1600</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td>Marsoftwares</td>
+      <td>INV-060</td>
+      <td>2017-10-30</td>
+      <td>2017-12-04</td>
+      <td>2018-01-06</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td>Honeydustries</td>
+      <td>INV-061</td>
+      <td>2017-10-31</td>
+      <td>2017-12-05</td>
+      <td>2017-12-15</td>
+      <td>0</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td>Happypaw</td>
+      <td>INV-062</td>
+      <td>2017-11-05</td>
+      <td>2017-12-10</td>
+      <td>2017-12-26</td>
+      <td>0</td>
+      <td>5800</td>
+      <td>5800</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td>Betagate</td>
+      <td>INV-063</td>
+      <td>2017-11-15</td>
+      <td>2017-12-20</td>
+      <td>2017-12-29</td>
+      <td>0</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>Moonlimited</td>
+      <td>INV-064</td>
+      <td>2017-11-19</td>
+      <td>2017-12-24</td>
+      <td>2017-12-28</td>
+      <td>0</td>
+      <td>3200</td>
+      <td>3200</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td>Cubrews</td>
+      <td>INV-065</td>
+      <td>2017-11-21</td>
+      <td>2017-12-26</td>
+      <td>NaT</td>
+      <td>4800</td>
+      <td>4800</td>
+      <td>0</td>
+      <td>2017-12</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Honeydustries</td>
+      <td>INV-066</td>
+      <td>2017-11-29</td>
+      <td>2018-01-03</td>
+      <td>NaT</td>
+      <td>5500</td>
+      <td>5500</td>
+      <td>0</td>
+      <td>2018-01</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Cubrews</td>
+      <td>INV-067</td>
+      <td>2017-12-06</td>
+      <td>2018-01-10</td>
+      <td>NaT</td>
+      <td>2000</td>
+      <td>5600</td>
+      <td>3600</td>
+      <td>2018-01</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Ridgeco</td>
+      <td>INV-068</td>
+      <td>2017-12-14</td>
+      <td>2018-01-18</td>
+      <td>NaT</td>
+      <td>4500</td>
+      <td>4500</td>
+      <td>0</td>
+      <td>2018-01</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Marsoftwares</td>
+      <td>INV-069</td>
+      <td>2017-12-21</td>
+      <td>2018-01-25</td>
+      <td>NaT</td>
+      <td>4600</td>
+      <td>4600</td>
+      <td>0</td>
+      <td>2018-01</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Dreamedia</td>
+      <td>INV-070</td>
+      <td>2017-12-23</td>
+      <td>2018-01-27</td>
+      <td>NaT</td>
+      <td>4000</td>
+      <td>5500</td>
+      <td>1500</td>
+      <td>2018-01</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Arcanetime</td>
+      <td>INV-071</td>
+      <td>2017-12-28</td>
+      <td>2018-02-01</td>
+      <td>NaT</td>
+      <td>5300</td>
+      <td>5300</td>
+      <td>0</td>
+      <td>2018-02</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Zeuslife</td>
+      <td>INV-072</td>
+      <td>2017-12-31</td>
+      <td>2018-02-04</td>
+      <td>NaT</td>
+      <td>3700</td>
+      <td>3700</td>
+      <td>0</td>
+      <td>2018-02</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Wavecast</td>
+      <td>INV-073</td>
+      <td>2018-01-05</td>
+      <td>2018-02-09</td>
+      <td>NaT</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>0</td>
+      <td>2018-02</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Honeydustries</td>
+      <td>INV-074</td>
+      <td>2018-01-08</td>
+      <td>2018-02-12</td>
+      <td>NaT</td>
+      <td>3400</td>
+      <td>3400</td>
+      <td>0</td>
+      <td>2018-02</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Happypaw</td>
+      <td>INV-075</td>
+      <td>2018-01-15</td>
+      <td>2018-02-19</td>
+      <td>NaT</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>0</td>
+      <td>2018-02</td>
+    </tr>
+  </tbody>
+</table>
+<p>75 rows × 9 columns</p>
+</div>
+
+
+
+
+```python
+ar_monthly = ar.groupby(['due_month'], as_index=False).sum()
+
+ar_monthly
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>due_month</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+      <th>paid_amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2017-02</td>
+      <td>0</td>
+      <td>9600</td>
+      <td>9600</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2017-03</td>
+      <td>0</td>
+      <td>24500</td>
+      <td>24500</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2017-04</td>
+      <td>0</td>
+      <td>11600</td>
+      <td>11600</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2017-05</td>
+      <td>0</td>
+      <td>21100</td>
+      <td>21100</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2017-06</td>
+      <td>0</td>
+      <td>23400</td>
+      <td>23400</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2017-07</td>
+      <td>0</td>
+      <td>11200</td>
+      <td>11200</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>2017-08</td>
+      <td>0</td>
+      <td>9900</td>
+      <td>9900</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>2017-09</td>
+      <td>0</td>
+      <td>15200</td>
+      <td>15200</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>2017-10</td>
+      <td>0</td>
+      <td>7200</td>
+      <td>7200</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>2017-11</td>
+      <td>0</td>
+      <td>15900</td>
+      <td>15900</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>2017-12</td>
+      <td>4800</td>
+      <td>28000</td>
+      <td>23200</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>2018-01</td>
+      <td>20600</td>
+      <td>25700</td>
+      <td>5100</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>2018-02</td>
+      <td>19600</td>
+      <td>19600</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+data = [
+    go.Bar(
+        x=ar_monthly['due_month'],
+        y=ar_monthly['paid_amount'],
+        name='Paid Amount'
+    ),
+    go.Bar(
+        x=ar_monthly['due_month'],
+        y=ar_monthly['amount_due'],
+        name='Unpaid Amount'
+    )
+]
+    
+layout = go.Layout(barmode='stack')
+
+fig = go.Figure(data=data, layout=layout)
+
+iplot(fig)
+```
+
+
+<div id="e8522f85-13fd-4757-b508-d9d7a5b31f0e" style="height: 525px; width: 100%;" class="plotly-graph-div"></div><script type="text/javascript">require(["plotly"], function(Plotly) { window.PLOTLYENV=window.PLOTLYENV || {};window.PLOTLYENV.BASE_URL="https://plot.ly";Plotly.newPlot("e8522f85-13fd-4757-b508-d9d7a5b31f0e", [{"type": "bar", "x": ["2017-02", "2017-03", "2017-04", "2017-05", "2017-06", "2017-07", "2017-08", "2017-09", "2017-10", "2017-11", "2017-12", "2018-01", "2018-02"], "y": [9600, 24500, 11600, 21100, 23400, 11200, 9900, 15200, 7200, 15900, 23200, 5100, 0], "name": "Paid Amount"}, {"type": "bar", "x": ["2017-02", "2017-03", "2017-04", "2017-05", "2017-06", "2017-07", "2017-08", "2017-09", "2017-10", "2017-11", "2017-12", "2018-01", "2018-02"], "y": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4800, 20600, 19600], "name": "Unpaid Amount"}], {"barmode": "stack"}, {"showLink": true, "linkText": "Export to plot.ly"})});</script>
+
+
+
+```python
+import datetime
+import numpy as np
+
+today = datetime.datetime(2018, 1, 1)
+```
+
+
+```python
+def due_by(row):
+    due_days = max(0, (row['due_date'] - today).days)
+    week_due = int(due_days / 7)
+    return '< {} weeks'.format(week_due + 1)
+
+ar['due_by'] = ar.apply(due_by, axis=1)
+
+outstanding = ar[ar['amount_due'] > 0]
+
+outstanding 
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>invoice_ref</th>
+      <th>issue_date</th>
+      <th>due_date</th>
+      <th>paid_date</th>
+      <th>amount_due</th>
+      <th>total_amount</th>
+      <th>paid_amount</th>
+      <th>due_month</th>
+      <th>due_by</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>64</th>
+      <td>Cubrews</td>
+      <td>INV-065</td>
+      <td>2017-11-21</td>
+      <td>2017-12-26</td>
+      <td>NaT</td>
+      <td>4800</td>
+      <td>4800</td>
+      <td>0</td>
+      <td>2017-12</td>
+      <td>&lt; 1 weeks</td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td>Honeydustries</td>
+      <td>INV-066</td>
+      <td>2017-11-29</td>
+      <td>2018-01-03</td>
+      <td>NaT</td>
+      <td>5500</td>
+      <td>5500</td>
+      <td>0</td>
+      <td>2018-01</td>
+      <td>&lt; 1 weeks</td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td>Cubrews</td>
+      <td>INV-067</td>
+      <td>2017-12-06</td>
+      <td>2018-01-10</td>
+      <td>NaT</td>
+      <td>2000</td>
+      <td>5600</td>
+      <td>3600</td>
+      <td>2018-01</td>
+      <td>&lt; 2 weeks</td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td>Ridgeco</td>
+      <td>INV-068</td>
+      <td>2017-12-14</td>
+      <td>2018-01-18</td>
+      <td>NaT</td>
+      <td>4500</td>
+      <td>4500</td>
+      <td>0</td>
+      <td>2018-01</td>
+      <td>&lt; 3 weeks</td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td>Marsoftwares</td>
+      <td>INV-069</td>
+      <td>2017-12-21</td>
+      <td>2018-01-25</td>
+      <td>NaT</td>
+      <td>4600</td>
+      <td>4600</td>
+      <td>0</td>
+      <td>2018-01</td>
+      <td>&lt; 4 weeks</td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td>Dreamedia</td>
+      <td>INV-070</td>
+      <td>2017-12-23</td>
+      <td>2018-01-27</td>
+      <td>NaT</td>
+      <td>4000</td>
+      <td>5500</td>
+      <td>1500</td>
+      <td>2018-01</td>
+      <td>&lt; 4 weeks</td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td>Arcanetime</td>
+      <td>INV-071</td>
+      <td>2017-12-28</td>
+      <td>2018-02-01</td>
+      <td>NaT</td>
+      <td>5300</td>
+      <td>5300</td>
+      <td>0</td>
+      <td>2018-02</td>
+      <td>&lt; 5 weeks</td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td>Zeuslife</td>
+      <td>INV-072</td>
+      <td>2017-12-31</td>
+      <td>2018-02-04</td>
+      <td>NaT</td>
+      <td>3700</td>
+      <td>3700</td>
+      <td>0</td>
+      <td>2018-02</td>
+      <td>&lt; 5 weeks</td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td>Wavecast</td>
+      <td>INV-073</td>
+      <td>2018-01-05</td>
+      <td>2018-02-09</td>
+      <td>NaT</td>
+      <td>5400</td>
+      <td>5400</td>
+      <td>0</td>
+      <td>2018-02</td>
+      <td>&lt; 6 weeks</td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td>Honeydustries</td>
+      <td>INV-074</td>
+      <td>2018-01-08</td>
+      <td>2018-02-12</td>
+      <td>NaT</td>
+      <td>3400</td>
+      <td>3400</td>
+      <td>0</td>
+      <td>2018-02</td>
+      <td>&lt; 7 weeks</td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td>Happypaw</td>
+      <td>INV-075</td>
+      <td>2018-01-15</td>
+      <td>2018-02-19</td>
+      <td>NaT</td>
+      <td>1800</td>
+      <td>1800</td>
+      <td>0</td>
+      <td>2018-02</td>
+      <td>&lt; 8 weeks</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+aged_debtors = pd.pivot_table(
+    outstanding, 
+    values='amount_due', 
+    index=['customer'], 
+    columns=['due_by'], 
+    aggfunc=np.sum
+).fillna(0)
+
+aged_debtors.reset_index(inplace=True)
+
+aged_debtors
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>due_by</th>
+      <th>customer</th>
+      <th>&lt; 1 weeks</th>
+      <th>&lt; 2 weeks</th>
+      <th>&lt; 3 weeks</th>
+      <th>&lt; 4 weeks</th>
+      <th>&lt; 5 weeks</th>
+      <th>&lt; 6 weeks</th>
+      <th>&lt; 7 weeks</th>
+      <th>&lt; 8 weeks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arcanetime</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5300.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cubrews</td>
+      <td>4800.0</td>
+      <td>2000.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Dreamedia</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4000.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Happypaw</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1800.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Honeydustries</td>
+      <td>5500.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3400.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Marsoftwares</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4600.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Ridgeco</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4500.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Wavecast</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5400.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zeuslife</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3700.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+total_due = outstanding.groupby('customer', as_index=False).sum()[['customer', 'amount_due']]
+
+total_due
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>amount_due</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arcanetime</td>
+      <td>5300</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cubrews</td>
+      <td>6800</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Dreamedia</td>
+      <td>4000</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Happypaw</td>
+      <td>1800</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Honeydustries</td>
+      <td>8900</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Marsoftwares</td>
+      <td>4600</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Ridgeco</td>
+      <td>4500</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Wavecast</td>
+      <td>5400</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zeuslife</td>
+      <td>3700</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
+
+```python
+total_due.merge(aged_debtors, on='customer', how='left')
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer</th>
+      <th>amount_due</th>
+      <th>&lt; 1 weeks</th>
+      <th>&lt; 2 weeks</th>
+      <th>&lt; 3 weeks</th>
+      <th>&lt; 4 weeks</th>
+      <th>&lt; 5 weeks</th>
+      <th>&lt; 6 weeks</th>
+      <th>&lt; 7 weeks</th>
+      <th>&lt; 8 weeks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Arcanetime</td>
+      <td>5300</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5300.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Cubrews</td>
+      <td>6800</td>
+      <td>4800.0</td>
+      <td>2000.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Dreamedia</td>
+      <td>4000</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4000.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Happypaw</td>
+      <td>1800</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1800.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Honeydustries</td>
+      <td>8900</td>
+      <td>5500.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3400.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Marsoftwares</td>
+      <td>4600</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4600.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Ridgeco</td>
+      <td>4500</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>4500.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Wavecast</td>
+      <td>5400</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>5400.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zeuslife</td>
+      <td>3700</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>3700.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+

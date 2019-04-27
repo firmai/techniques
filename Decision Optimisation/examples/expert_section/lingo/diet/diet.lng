@@ -1,0 +1,23 @@
+model:
+
+@FILE("ticdat_diet.lng")
+@FILE("ticdat_diet.ldt")
+
+sets:
+    buy_food(foods): buy_food_quantity;
+endsets
+
+[total_cost] MIN = N;
+ N = @sum( foods( i): foods_cost(i)*buy_food_quantity(i));
+
+ @for( categories( j):
+   [nutrilo] @sum( nutrition_quantities( i, j): nutrition_quantities_quantity(i,j)*buy_food_quantity(i)) >=
+             categories_min_nutrition( j);
+   [nutrihi] @sum( nutrition_quantities( i, j): nutrition_quantities_quantity(i,j)*buy_food_quantity(i)) <=
+             categories_max_nutrition( j);
+     );
+
+@FILE("ticdat_diet_output.ldt")
+
+end
+

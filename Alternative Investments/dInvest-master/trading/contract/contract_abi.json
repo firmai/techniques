@@ -1,0 +1,186 @@
+[{
+  "constant":true,
+  "inputs":[],
+  "name":"creator",
+  "outputs":[{"name":"","type":"address"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"investAgent",
+  "outputs":[{"name":"","type":"address"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[
+    {"name":"amount","type":"uint256"},
+    {"name":"companies","type":"string"}
+  ],
+  "name":"investOffer",
+  "outputs":[],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"minimumInvestment",
+  "outputs":[{"name":"","type":"uint256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"sharpe",
+  "outputs":[{"name":"","type":"int256"}],
+  "payable":false,"type":"function"
+},{"constant":false,
+  "inputs":[{"name":"companies","type":"string"}],
+  "name":"createInvestment",
+  "outputs":[],
+  "payable":true,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[],
+  "name":"kill",
+  "outputs":[],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[{"name":"newMinimumInvestment","type":"uint256"}],
+  "name":"setMinimumInvestment",
+  "outputs":[],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"buyAgent",
+  "outputs":[{"name":"","type":"address"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[
+    {"name":"_returnRatio","type":"int256"},
+    {"name":"_sharpe","type":"int256"},
+    {"name":"_alpha","type":"int256"},
+    {"name":"_beta","type":"int256"}
+  ],
+  "name":"sendBuyAgent",
+  "outputs":[],
+  "payable":true,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"availableForInvestment",
+  "outputs":[{"name":"","type":"uint256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[{"name":"newBuyAgent","type":"address"}],
+  "name":"setBuyAgent",
+  "outputs":[],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[{"name":"newInvestAgent","type":"address"}],
+  "name":"setInvestAgent",
+  "outputs":[],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"beta",
+  "outputs":[{"name":"","type":"int256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[],
+  "name":"withdrawBuyAgent",
+  "outputs":[{"name":"","type":"bool"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":false,
+  "inputs":[{"name":"withdrawAmount","type":"uint256"}],
+  "name":"withdrawalUser",
+  "outputs":[{"name":"","type":"bool"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"blackListCompanies",
+  "outputs":[{"name":"","type":"string"}],
+  "payable":false,"type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"originalInvestment",
+  "outputs":[{"name":"","type":"uint256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"alpha",
+  "outputs":[{"name":"","type":"int256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[],
+  "name":"returnRatio",
+  "outputs":[{"name":"","type":"int256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[{"name":"investor","type":"address"}],
+  "name":"getInvestmentCurrentValue",
+  "outputs":[{"name":"nowValue","type":"uint256"}],
+  "payable":false,
+  "type":"function"
+},{
+  "constant":true,
+  "inputs":[{"name":"","type":"uint256"}],
+  "name":"investments",
+  "outputs":[
+    {"name":"investor","type":"address"},
+    {"name":"value","type":"uint256"},
+    {"name":"withdrawal","type":"uint256"},
+    {"name":"period","type":"uint256"},
+    {"name":"withdrawalLimit","type":"uint256"},
+    {"name":"blackListCompanies","type":"string"}
+  ],
+  "payable":false,
+  "type":"function"
+},{
+  "inputs":[
+    {"name":"_minimumInvestment","type":"uint256"},
+    {"name":"_investAgent","type":"address"},
+    {"name":"_buyAgent","type":"address"}
+  ],
+  "type":"constructor"
+},{
+  "anonymous":false,
+  "inputs":[{"indexed":false,"name":"amount","type":"uint256"}],
+  "name":"InvestmentOfferByBot",
+  "type":"event"
+},{
+  "anonymous":false,
+  "inputs":[
+    {"indexed":false,"name":"accountAddress","type":"address"},
+    {"indexed":false,"name":"amount","type":"uint256"}
+  ],
+  "name":"NewInvestmentByUser",
+  "type":"event"}]
